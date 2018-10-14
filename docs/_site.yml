@@ -7,14 +7,10 @@ navbar:
       href: index.html
     - text: "A Little About Me"
       href: about.html
+  right:
+      - icon: fa-github fa-lg
+        href: https://github.com/EDavisCarter
       
-   right:
-    - icon: fa-envelope fa-lg
-      href: contact.html
-    - icon: fa-github fa-lg
-      href: https://github.com/EDavisCarter
-    - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/davis-carter-990496b2/
 output:
   html_document:
     theme: yeti
