@@ -8,7 +8,8 @@ title: "Who am I and how did I get here?"
 <div class="panel panel-info">
 ###**Education**
 {: .panel-heading}
-<div class="panel-body">
+<div class="panel-body">  
+
 **MS Wildlife and Fisheries Science**  
 **BS Biology**
 
