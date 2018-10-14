@@ -1,10 +1,12 @@
 ---
 title: "Who am I and how did I get here?"
 ---
--__Name:__**Davis Carter**
--__Current Position:__ First Year PhD student
--__Research Interest:__Amphibian Disease Ecologist 
+*__Name:__**Davis Carter**  
+*__Current Position:__First Year PhD student  
+*__Research Interest:__Amphibian Disease Ecologist 
 
+
+#Education
 **MS Wildlife and Fisheries Science**  
 **BS Biology**
 
