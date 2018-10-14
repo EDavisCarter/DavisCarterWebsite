@@ -1,5 +1,5 @@
 ---
-title: "About This Website"
+title: "E. Davis Carter Website Practice Build"
 ---
 
-More about this website.
+I am making this, check check.
