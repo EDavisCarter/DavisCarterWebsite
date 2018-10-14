@@ -6,6 +6,6 @@ title: "E. Davis Carter"
 **MS Wildlife and Fisheries Science**  
 **BS Biology**
 
-image: ![](
+image: ![image](
         DavisCarterWebsite/Soccer photo.jpg
       )
