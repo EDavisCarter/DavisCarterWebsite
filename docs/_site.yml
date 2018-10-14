@@ -7,3 +7,7 @@ navbar:
       href: index.html
     - text: "A Little About Me"
       href: about.html
+output:
+  html_document:
+    theme: yeti
+    css: style.css
