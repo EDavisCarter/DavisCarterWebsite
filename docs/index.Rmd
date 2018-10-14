@@ -1,5 +1,6 @@
 ---
-title: "My Website"
+title: "E. Davis Carter Website"
 ---
 
-Hello, Website!
+Hey there, thanks for checking out my personal website! 
+Here you should find a little bit about me and my research/personal interests.

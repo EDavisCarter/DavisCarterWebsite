@@ -1,9 +1,9 @@
-name: "my-website"
+name: "E. Davis Carter Website"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Hey There!"
   left:
-    - text: "Home"
+    - text: "Welcome Tab"
       href: index.html
-    - text: "About"
+    - text: "A Little About Me"
       href: about.html
