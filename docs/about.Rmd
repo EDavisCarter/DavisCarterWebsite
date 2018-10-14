@@ -5,8 +5,12 @@ title: "Who am I and how did I get here?"
 * Current Position: First Year PhD student    
 * Research Interest: Amphibian Disease Ecologist   
 
-
-###Education
+<div class="panel panel-info">
+###**Education**
+{: .panel-heading}
+<div class="panel-body">
 **MS Wildlife and Fisheries Science**  
 **BS Biology**
 
+</div>
+</div>

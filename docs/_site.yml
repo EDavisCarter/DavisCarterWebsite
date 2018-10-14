@@ -1,7 +1,7 @@
 name: "E. Davis Carter Website"
 output_dir: "."
 navbar:
-  title: "E. Davis Carter!"
+  title: "E. Davis Carter"
   left:
     - text: "Welcome Tab"
       href: index.html
