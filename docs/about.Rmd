@@ -2,4 +2,5 @@
 title: "E. Davis Carter Website Practice Build"
 ---
 
-I am making this, check check.
+New update
+I am trying to add another line to my website. Git commit and staging does not seem to be working. 
