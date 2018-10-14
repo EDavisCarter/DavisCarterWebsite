@@ -1,6 +1,8 @@
 ---
-title: "E. Davis Carter Website Practice Build"
+title: "E. Davis Carter"
 ---
 
-New update
-**I am trying to add another line to my website. Git commit and staging does not seem to be working.** who knows
+##Amphibian Disease Ecologist
+**MS Wildlife and Fisheries Science**
+**BS Biology**
+
