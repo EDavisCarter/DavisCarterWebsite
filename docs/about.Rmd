@@ -3,4 +3,4 @@ title: "E. Davis Carter Website Practice Build"
 ---
 
 New update
-I am trying to add another line to my website. Git commit and staging does not seem to be working. 
+**I am trying to add another line to my website. Git commit and staging does not seem to be working.**
