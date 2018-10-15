@@ -11,4 +11,4 @@ title: "E. Davis Carter Website"
 ###Here you should find a little bit about me and my research/personal interests.
 
 
-![What?](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Soccer%20photo.jpg)
+![Charlies Bunion, GSMNP](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Profpic1.jpg)
