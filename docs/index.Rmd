@@ -9,4 +9,4 @@ title: "Hey There"
 ###Here you should find a little bit about me and my research/personal interests.
 
 
-![Charlies Bunion, GSMNP](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Profpic1.jpg)
+![**Charlies Bunion, GSMNP**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Profpic1.jpg)
