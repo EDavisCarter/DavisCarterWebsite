@@ -7,14 +7,15 @@ navbar:
       href: index.html
     - text: "A Little About Me"
       href: about.html
+    - text: "Publications"
+      href: publications.html
+    - text: "CV"
+      href: CV.html
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter
       - icon: fa-linkedin fa-lg
         href: https://www.linkedin.com/in/davis-carter-990496b2/
-      - icon: ai-researchgate 
-        href: https://www.researchgate.net/profile/Edward_Carter8
-      
 output:
   html_document:
     theme: yeti
