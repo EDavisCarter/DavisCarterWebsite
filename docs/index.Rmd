@@ -11,4 +11,4 @@ title: "E. Davis Carter Website"
 ###Here you should find a little bit about me and my research/personal interests.
 
 
-![What?](DavisCarterWebsite/Soccer photo.jpg)
+![What?](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Soccer%20photo.jpg)
