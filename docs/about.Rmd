@@ -1,5 +1,5 @@
 ---
-title: "Who am I and how did I get here?"
+title: "Who am I? How did I get here?"
 ---
 <!-- blank line -->
 ----
@@ -13,7 +13,6 @@ title: "Who am I and how did I get here?"
 * **BS Biology, Hampden-Sydney College 2015**  
 
 ![**Hampden-Sydney College**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/H-SC.png)
-![**University of Tennessee**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/UTK.png)
 ![**Forestry Wildlife and Fisheries**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/FWFlogo.png)
 
 
