@@ -14,5 +14,6 @@ title: "Who am I and how did I get here?"
 
 ![**Hampden-Sydney College**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/H-SC.png)
 ![**University of Tennessee**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/UTK.png)
+![**Forestry Wildlife and Fisheries**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/FWFlogo.png)
 
 
