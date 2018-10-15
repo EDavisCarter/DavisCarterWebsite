@@ -11,8 +11,7 @@ title: "Who am I? How did I get here?"
 ###**Education**
 * **MS Wildlife and Fisheries Science, Univeristy of Tennessee, Knoxville 2018**   
 * **BS Biology, Hampden-Sydney College 2015**  
-----
+
 ![**Hampden-Sydney College**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/H-SC.png)
 ![**Forestry Wildlife and Fisheries**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/FWFlogo.png)
-----
 
