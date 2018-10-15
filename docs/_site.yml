@@ -12,7 +12,7 @@ navbar:
         href: https://github.com/EDavisCarter
       - icon: fa-linkedin fa-lg
         href: https://www.linkedin.com/in/davis-carter-990496b2/
-      - icon: fab fa-researchgate fa-lg
+      - icon: <i class="fab fa-researchgate"></i>
         href: https://www.researchgate.net/profile/Edward_Carter8
       
 output:
