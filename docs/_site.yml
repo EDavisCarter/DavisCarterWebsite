@@ -5,7 +5,7 @@ navbar:
   left:
     - text: "Welcome Tab"
       href: index.html
-    - text: "A Little About Me"
+    - text: "About Me"
       href: about.html
     - text: "Publications"
       href: publications.html
