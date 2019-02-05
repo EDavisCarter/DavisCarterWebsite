@@ -5,25 +5,25 @@ navbar:
   left:
     - text: "Welcome Tab"
       href: index.html
-      icon: fas fa-igloo
+      icon: fas fa-home
     - text: "About Me"
       href: about.html
-      icon: fas fa-hiking
+      icon: fas fa-user
     - text: "Pubs/Pres"
       href: pubs.html
-      icon: fal fa-presentation
+      icon: fal fa-book-open
     - text: "CV"
       href: CV.html
       icon: fas fa-paperclip
     - text: "Contact me"
       href: contact.html 
-      icon: fab fa-envelope
+      icon: fas fa-phone
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter
       - icon: fa-linkedin fa-lg
         href: https://www.linkedin.com/in/davis-carter-990496b2/
-      - icon: fab fa-researchgate
+      - icon: fab fa-researchgate 
         href: https://www.researchgate.net/profile/Edward_Carter8
 
 
