@@ -1,0 +1,23 @@
+---
+title: "Contact me"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#By Phone
+
+704-819-0708
+
+***
+
+#By Email
+
+**Work Email:** ecarte27@utk.edu
+
+**Gmail Email:** carteredward4@gmail.com
+
+
+
