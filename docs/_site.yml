@@ -17,7 +17,7 @@ navbar:
       icon: fas fa-paperclip
     - text: "Contact me"
       href: contact.html 
-      icon: fas fa-envelope
+      icon: fab fa-envelope
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter
