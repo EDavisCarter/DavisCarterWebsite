@@ -18,6 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 3.	**Carter ED**. Goodman RM. 2014. Storeria dekayi dekayi (Northern Brown Snake). County record. Catesbeiana 34:1.
 
 **IN REVIEW:**
+
 1.	Goodman RM. **Carter ED**, Hargadon KM. Infection of Ranavirus in Eastern Fence Lizards and Eastern Box Turtles in Central Virginia. Northeastern Naturalist. 
 
 2.	Cusaac JPW, **Carter ED**, Woodhams DC, Robert J, Spatz JA, Howard JL, Lillard C, Graham AW, Hill RD, Reinsch S, McGinnity D, Reeves B, Bemis D, Wilkes RP, Hopkins WB, Waltzek TB, Miller DL, Gray MJ. Interactive Effects of Herbicide and Emerging Amphibian Pathogens in Eastern Hellbender. EcoHealth.

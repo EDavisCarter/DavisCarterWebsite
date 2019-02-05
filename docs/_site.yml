@@ -7,7 +7,7 @@ navbar:
       href: index.html
     - text: "About Me"
       href: about.html
-    - text: "Publications"
+    - text: "Pubs/Pres"
       href: pubs.html
     - text: "CV"
       href: CV.html

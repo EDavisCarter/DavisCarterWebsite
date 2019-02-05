@@ -1,5 +1,5 @@
 ---
-title: "CV"
+title: "**CV**"
 output: html_document
 ---
 
@@ -7,20 +7,133 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+
+                                                                                              
+**Education** 
+
+**Ph.D. (First Year), University of Tennessee-Knoxville**
+
+Natural Resources (Concentration = Wildlife Health), University of Tennessee-Knoxville, Fall 2018 
+**M.S., University of Tennessee-Knoxville** , August 2018 
+
+Major = Wildlife and Fisheries Science, Concentration = Wildlife Health, GPA: 3.97
+
+**B.S., Hampden-Sydney College** , May 2015
+
+Major = Biology, Minor = German
+
+Biology GPA: 4.0, Overall GPA: 3.75
+
+**Research Experience** 
+
+**Graduate Research Assistant, University of Tennessee, Knoxville**           Fall 2016-Present
+
+Performed laboratory experiments and field studies on the emerging amphibian pathogens: ranavirus, Batrachochytrium dendrobatidis (Bd) and Batrachochytrium salamandrivorans (Bsal) in the University of Tennessee Institute of Agriculture (UTIA) Center for Wildlife Health (advisors, Drs. Matthew Gray and Debra Miller)
+
+**MS THESIS RESEARCH:** 
+
+Goal: Identify reservoirs and factors responsible for reoccurring outbreaks of ranavirus in the Great Smoky Mountains National Park.
+
+•	Led all field operations, interacted with National Park Service personnel, and supervised >20 volunteers and technicians.
+
+•	Installed and operated a pitfall and drift fence system around two ephemeral wetlands for capturing terrestrial amphibians.
+
+•	Performed weekly sampling of terrestrial and larval amphibians (aquatic nets) during the breeding season for two consecutive years.
+
+•	Marked captured amphibians with a unique ID and collected tissue samples for ranavirus DNA testing via quantitative Polymerase Chain Reaction (qPCR).
+
+•	Organized, entered, and analyzed data using Excel® and the SAS® system.
+
+•	Presented results to funding agencies in quarterly progress reports, presentations, and a thesis.
+
+**ADDITIONAL COLLABORATIVE WILDLIFE DISEASE RESEARCH IN THE UTIA CENTER FOR WILDLIFE HEALTH:** 
+
+•	Led controlled Bsal experiments for >25 North American amphibian species using a dose-dependent design (n = 5 – 10 animals per dose for 4 zoospore doses).
+
+•	Maintained Bsal and ranavirus cultures, and performed experimental inoculations.
+
+•	Monitored animals daily for signs of disease, performed euthanasia at humane endpoints, and collected tissues for pathogen testing.
+
+•	Performed DNA extractions and qPCR (ranavirus, Bd, and Bsal) on >3000 swab and tissue samples. 
+
+•	Trained new lab personnel in Biosafety Level 2 (BSL 2) and Institutional Animal Care and Use Committee (IACUC) protocols.
+
+•	Independently developed a method for quantifying and determining viability of Bsal zoospores using flow cytometry.
+
+•	Independently evaluated new methods of differentiating encysted and motile Bsal zoospores.
+
+**Graduate Teaching Assistant, University of Tennessee, Knoxville**          Fall 2016- Present 
+
+Assisted instructors (Chris Graves and Dr. Matthew Gray) with undergraduate classes.
+
+•	Graded tests, quizzes and other classroom assignments.
+
+•	Supervised students during examinations.
+
+•	Organized and assisted with field activities.
+
+Courses: Dendrology (FWF 212), Conservation (FWF 250), Wildlife Habitat Evaluation (WFS 324), Wetlands Ecology and Management (WFS 340), and Wildlife Damage Management (WFS 350). 
+
+**Research Associate I, University of Tennessee, Knoxville **            Summer 2015- Fall 2016                          
+Organized and led several experiments involving the amphibian pathogens, ranavirus and Batrachochytrium dendrobatidis (Bd); supervisors = Drs. Matthew Gray and Debra Miller.
+
+•	Cultured pathogens and led animal inoculations. 
+
+•	Maintained experiments with large sample sizes involving up to 600 amphibians. Daily health monitoring, biosecurity precautions to limit cross-contamination, water changes, decontamination, humane euthanasia, necropsy, tissue collection and preservation. 
+
+•	Led DNA extractions and tested samples for ranavirus and Bd using qPCR. 
+
+**Senior Departmental Honors Research, Hampden-Sydney College**       Fall 2014 – Spring 2015                                                              
+Continuation of research associated with experiment in summer 2014 
+
+•	Tested presence/absence of ranavirus DNA in tissues using qPCR. 
+
+•	Created and interpreted histology slides from preserved turtle tissues.
+
+•	Analyzed experimental data and communicated results in a written report.
 
 
+**Summer Research Assistant, Hampden-Sydney College**  		                           	Summer 2014                                                                
+Performed experiment with Red-eared Sliders (Trachemys scripta elegans) measuring the interaction of ranavirus and herbicide exposures
 
-```{r cars}
-summary(cars)
-```
+•	Fed and monitored 160 juvenile turtles for 5 weeks. Weighed, measured, and assessed condition of turtles weekly.  Euthanized and necropsied turtles, and collected tissues. 
 
-## Including Plots
+•	Extracted DNA from tissue samples collected from turtles during the experiment.
 
-You can also embed plots, for example:
+•	Tested presence/absence of ranavirus DNA in tissues using qPCR.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+**Independent Study in Biology, Hampden-Sydney College**                Fall 2013 - Spring 2014
+Continuation of research associated with survey study in summer 2013 
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+•	Extracted DNA from tissues obtained from several snake, lizard and turtle species.
+
+•	Analyzed DNA quantities using a spectrophotometer.  
+
+•	Performed PCR and Gel-Electrophoresis to determine the prevalence of ranavirus in reptiles in campus wetlands.
+
+**Introductory Biology Lab Assistant, Hampden-Sydney College**  		 Spring 2014                                                                
+•	Taught introductory students various laboratory techniques.
+
+•	Assisted instructor by answering student questions and guiding them through labs.
+
+**Summer Research Assistant, Hampden-Sydney College**  			Summer 2013
+Survey of ranavirus in central Virginia reptiles (mentor: Dr. Rachel Goodman)
+
+•	Set up artificial cover board array to survey herpetofauna on Hampden-Sydney campus.
+
+•	Captured, weighed, measured, and took tissue samples from chelonians and squamates.
+
+•	Developed skills in data entry, data analysis, and scientific writing.
+
+**Awards and Grants**  
+Tennessee Fellowship for Graduate Excellence Recipient, $176,000                     January 2018 
+UT Graduate Student Senate Travel Award, $690                                          April 2017
+
+International Symposium of Ranaviruses Travel Award, $1500                             April 2017
+
+R. T. Hewitt Biology Award, Hampden-Sydney College                                       May 2015
+
+Summa Cum Laude, Hampden-Sydney College                                                  May 2015
+
+Madison Scholarship Recipient, Hampden-Sydney College                               February 2013
+
