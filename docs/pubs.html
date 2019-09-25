@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -73,9 +72,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -100,6 +97,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +114,6 @@ body {
   padding-top: 50px;
   margin-top: -50px;
 }
-
 .section h2 {
   padding-top: 50px;
   margin-top: -50px;
@@ -134,6 +133,43 @@ body {
 .section h6 {
   padding-top: 50px;
   margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,19 +191,85 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
 });
 </script>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -255,23 +357,22 @@ $(document).ready(function () {
 
 <div id="publications" class="section level2">
 <h2><strong>Publications</strong></h2>
-<p><strong>PUBLISHED:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Gray MJ, Spatz JA, <strong>Carter ED</strong>, Miller DL. Poor Biosecurity Could Lead to Disease Outbreaks in Animal Populations. 2018. PLoS ONE (in press).</p></li>
+<p><strong>PUBLISHED:</strong> 1. <strong>E Davis Carter</strong>, Miller DL, Peterson AN, Sutton W, Cusaac JPW, Spatz JA, Rollins-Smith LA, Reinert LK, Bohanon M, Williams LA, Upchurch A, Gray MJ. Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders. 2019 Conservation Letters.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Ossiboff RJ, Towe AE, Brown MA, Longo AV, Lips KR, Miller DL, <strong>Carter ED</strong>, Gray MJ, Frasca S. Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans in Amphibian Chytridiomycosis Using RNAScope® in situ Hybridization. 2019. Frontiers in Veterinary Science.</p></li>
+<li><p>Peace A, O’Regan SM, Spatz JA, Reilly PN, Hill RD, <strong>Carter ED</strong>, Wilkes RP, Waltzek TB, Miller DL, Gray MJ. Dominant transmission pathways depend on population size for a highly virulent, chimeric pathogen. Oikos.</p></li>
+<li><p>Casais R, Larrinaga AR, Dalton KP, Lapido PD, Marquez I, Becares A, Carter ED, Gray MJ, Miller DL, Balseiro A. Water sports could contribute to the translocation of ranaviruses. 2019.Scientific Reports.</p></li>
+</ol>
+<p>5.Goodman R, Hargadon KM, <strong>Carter ED</strong>.Detection of Ranavirus in Eastern Fence Lizards and Eastern Box Turtles in Central Virginia. 2018. Northeastern Naturalist.</p>
+<ol start="6" style="list-style-type: decimal">
+<li><p>Gray MJ, Spatz JA, <strong>Carter ED</strong>, Miller DL. Poor Biosecurity Could Lead to Disease Outbreaks in Animal Populations. 2018. PLoS ONE.</p></li>
 <li><p>Goodman RM. <strong>Carter ED</strong>. 2017. Survey of Hepetofauna on the Campus of Hampden-Sydney Collece Prince Edward County, Virginia. Catesbeiana 32:2</p></li>
 <li><p><strong>Carter ED</strong>. Goodman RM. 2014. Storeria dekayi dekayi (Northern Brown Snake). County record. Catesbeiana 34:1.</p></li>
 </ol>
-<p><strong>IN REVIEW:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Goodman RM. <strong>Carter ED</strong>, Hargadon KM. Infection of Ranavirus in Eastern Fence Lizards and Eastern Box Turtles in Central Virginia. Northeastern Naturalist.</p></li>
-<li><p>Cusaac JPW, <strong>Carter ED</strong>, Woodhams DC, Robert J, Spatz JA, Howard JL, Lillard C, Graham AW, Hill RD, Reinsch S, McGinnity D, Reeves B, Bemis D, Wilkes RP, Hopkins WB, Waltzek TB, Miller DL, Gray MJ. Interactive Effects of Herbicide and Emerging Amphibian Pathogens in Eastern Hellbender. EcoHealth.</p></li>
-<li><p>Peace A, O’Regan SM, Spatz JA, Reilly PN, Hill RD, <strong>Carter ED</strong>, Wilkes RP, Waltzek TB, Miller DL, Gray MJ. Dominant transmission pathways depend on population size for a highly virulent, chimeric pathogen. Oikos.</p></li>
-</ol>
+<p><strong>IN REVIEW:</strong> 1. Cusaac JPW, <strong>Carter ED</strong>, Woodhams DC, Robert J, Spatz JA, Howard JL, Lillard C, Graham AW, Hill RD, Reinsch S, McGinnity D, Reeves B, Bemis D, Wilkes RP, Hopkins WB, Waltzek TB, Miller DL, Gray MJ. Interactive Effects of Herbicide and Emerging Amphibian Pathogens in Eastern Hellbender. EcoHealth.</p>
 <p><strong>IN PREPARATION:</strong> 1. Drought and ranavirus interact to negatively impact wood frogs in the Great Smoky Mountains National Park. Target Journal = Copeia.</p>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Tolerance of North American Amphibian Species to Batrachochytrium salamandrivorans infections. Target journal = Proceedings of the National Academy of Sciences (USA).</p></li>
-<li><p>Conservation risk of Batrachochytrium salamandrivorans to endemic brook salamanders. Target Journal = Conservation Biology.</p></li>
-<li><p>Potential Role of North American Newt Species in the emergence of Batrachochytrium salamandrivorans. Target Journal = Nature.</p></li>
 <li><p>Estimating Batrachochytrium salamandrivorans zoospore viability using flow cytometry. Target Journal = Diseases of Aquatic Organisms.</p></li>
 </ol>
 </div>
