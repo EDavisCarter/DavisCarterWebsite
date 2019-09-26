@@ -20,7 +20,7 @@ navbar:
       icon: fas fa-phone
     - text: "TWS Poster 2019"
       href: TWS_Poster_Page_2019.html
-      icon: fas fa-presentation
+      icon: fas fa-bullhorn
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter

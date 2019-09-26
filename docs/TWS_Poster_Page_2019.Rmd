@@ -7,12 +7,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#Thanks for using the QR code! Hopefully you will find the Links/Supplementary files included on this page informative. Also, feel free to peruse my website! 
+**Thanks for using the QR code! Hopefully you will find the Links/Supplementary files included on this page informative. Also, feel free to peruse my website!** 
 
 [Contact Information](https://edaviscarter.github.io/DavisCarterWebsite/contact.html)
 
+[Lab Website](https://ag.tennessee.edu/fwf/bsalproject/Pages/default.aspx)
 
-## Including Plots
+
+## 
 
 You can also embed plots, for example:
 
@@ -21,3 +23,10 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+##Published Research Relating to this work 
+ 
+ **Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders**
+[Carter et al. 2019](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12675) 
+
+##Literature Cited in Poster
