@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -73,9 +72,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -100,6 +97,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +114,6 @@ body {
   padding-top: 50px;
   margin-top: -50px;
 }
-
 .section h2 {
   padding-top: 50px;
   margin-top: -50px;
@@ -134,6 +133,43 @@ body {
 .section h6 {
   padding-top: 50px;
   margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,19 +191,85 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
 });
 </script>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -219,6 +321,13 @@ $(document).ready(function () {
     Contact me
   </a>
 </li>
+<li>
+  <a href="TWS_Poster_Page.html">
+    <span class="far fa far fa-presentation"></span>
+     
+    TWS Poster 2019
+  </a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -265,52 +374,52 @@ $(document).ready(function () {
 <p>Performed laboratory experiments and field studies on the emerging amphibian pathogens: ranavirus, Batrachochytrium dendrobatidis (Bd) and Batrachochytrium salamandrivorans (Bsal) in the University of Tennessee Institute of Agriculture (UTIA) Center for Wildlife Health (advisors, Drs. Matthew Gray and Debra Miller)</p>
 <p><strong>MS THESIS RESEARCH:</strong></p>
 <p>Goal: Identify reservoirs and factors responsible for reoccurring outbreaks of ranavirus in the Great Smoky Mountains National Park.</p>
-<p>• Led all field operations, interacted with National Park Service personnel, and supervised &gt;20 volunteers and technicians.</p>
-<p>• Installed and operated a pitfall and drift fence system around two ephemeral wetlands for capturing terrestrial amphibians.</p>
-<p>• Performed weekly sampling of terrestrial and larval amphibians (aquatic nets) during the breeding season for two consecutive years.</p>
-<p>• Marked captured amphibians with a unique ID and collected tissue samples for ranavirus DNA testing via quantitative Polymerase Chain Reaction (qPCR).</p>
-<p>• Organized, entered, and analyzed data using Excel® and the SAS® system.</p>
-<p>• Presented results to funding agencies in quarterly progress reports, presentations, and a thesis.</p>
+<p>â€¢ Led all field operations, interacted with National Park Service personnel, and supervised &gt;20 volunteers and technicians.</p>
+<p>â€¢ Installed and operated a pitfall and drift fence system around two ephemeral wetlands for capturing terrestrial amphibians.</p>
+<p>â€¢ Performed weekly sampling of terrestrial and larval amphibians (aquatic nets) during the breeding season for two consecutive years.</p>
+<p>â€¢ Marked captured amphibians with a unique ID and collected tissue samples for ranavirus DNA testing via quantitative Polymerase Chain Reaction (qPCR).</p>
+<p>â€¢ Organized, entered, and analyzed data using ExcelÂ® and the SASÂ® system.</p>
+<p>â€¢ Presented results to funding agencies in quarterly progress reports, presentations, and a thesis.</p>
 <p><strong>ADDITIONAL COLLABORATIVE WILDLIFE DISEASE RESEARCH IN THE UTIA CENTER FOR WILDLIFE HEALTH:</strong></p>
-<p>• Led controlled Bsal experiments for &gt;25 North American amphibian species using a dose-dependent design (n = 5 – 10 animals per dose for 4 zoospore doses).</p>
-<p>• Maintained Bsal and ranavirus cultures, and performed experimental inoculations.</p>
-<p>• Monitored animals daily for signs of disease, performed euthanasia at humane endpoints, and collected tissues for pathogen testing.</p>
-<p>• Performed DNA extractions and qPCR (ranavirus, Bd, and Bsal) on &gt;3000 swab and tissue samples.</p>
-<p>• Trained new lab personnel in Biosafety Level 2 (BSL 2) and Institutional Animal Care and Use Committee (IACUC) protocols.</p>
-<p>• Independently developed a method for quantifying and determining viability of Bsal zoospores using flow cytometry.</p>
-<p>• Independently evaluated new methods of differentiating encysted and motile Bsal zoospores.</p>
+<p>â€¢ Led controlled Bsal experiments for &gt;25 North American amphibian species using a dose-dependent design (n = 5 â€“ 10 animals per dose for 4 zoospore doses).</p>
+<p>â€¢ Maintained Bsal and ranavirus cultures, and performed experimental inoculations.</p>
+<p>â€¢ Monitored animals daily for signs of disease, performed euthanasia at humane endpoints, and collected tissues for pathogen testing.</p>
+<p>â€¢ Performed DNA extractions and qPCR (ranavirus, Bd, and Bsal) on &gt;3000 swab and tissue samples.</p>
+<p>â€¢ Trained new lab personnel in Biosafety Level 2 (BSL 2) and Institutional Animal Care and Use Committee (IACUC) protocols.</p>
+<p>â€¢ Independently developed a method for quantifying and determining viability of Bsal zoospores using flow cytometry.</p>
+<p>â€¢ Independently evaluated new methods of differentiating encysted and motile Bsal zoospores.</p>
 <p><strong>Graduate Teaching Assistant, University of Tennessee, Knoxville</strong> Fall 2016- Present</p>
 <p>Assisted instructors (Chris Graves and Dr. Matthew Gray) with undergraduate classes.</p>
-<p>• Graded tests, quizzes and other classroom assignments.</p>
-<p>• Supervised students during examinations.</p>
-<p>• Organized and assisted with field activities.</p>
+<p>â€¢ Graded tests, quizzes and other classroom assignments.</p>
+<p>â€¢ Supervised students during examinations.</p>
+<p>â€¢ Organized and assisted with field activities.</p>
 <p>Courses: Dendrology (FWF 212), Conservation (FWF 250), Wildlife Habitat Evaluation (WFS 324), Wetlands Ecology and Management (WFS 340), and Wildlife Damage Management (WFS 350).</p>
 <p><strong>Research Associate I, University of Tennessee, Knoxville </strong> Summer 2015- Fall 2016<br />
 Organized and led several experiments involving the amphibian pathogens, ranavirus and Batrachochytrium dendrobatidis (Bd); supervisors = Drs. Matthew Gray and Debra Miller.</p>
-<p>• Cultured pathogens and led animal inoculations.</p>
-<p>• Maintained experiments with large sample sizes involving up to 600 amphibians. Daily health monitoring, biosecurity precautions to limit cross-contamination, water changes, decontamination, humane euthanasia, necropsy, tissue collection and preservation.</p>
-<p>• Led DNA extractions and tested samples for ranavirus and Bd using qPCR.</p>
-<p><strong>Senior Departmental Honors Research, Hampden-Sydney College</strong> Fall 2014 – Spring 2015<br />
+<p>â€¢ Cultured pathogens and led animal inoculations.</p>
+<p>â€¢ Maintained experiments with large sample sizes involving up to 600 amphibians. Daily health monitoring, biosecurity precautions to limit cross-contamination, water changes, decontamination, humane euthanasia, necropsy, tissue collection and preservation.</p>
+<p>â€¢ Led DNA extractions and tested samples for ranavirus and Bd using qPCR.</p>
+<p><strong>Senior Departmental Honors Research, Hampden-Sydney College</strong> Fall 2014 â€“ Spring 2015<br />
 Continuation of research associated with experiment in summer 2014</p>
-<p>• Tested presence/absence of ranavirus DNA in tissues using qPCR.</p>
-<p>• Created and interpreted histology slides from preserved turtle tissues.</p>
-<p>• Analyzed experimental data and communicated results in a written report.</p>
+<p>â€¢ Tested presence/absence of ranavirus DNA in tissues using qPCR.</p>
+<p>â€¢ Created and interpreted histology slides from preserved turtle tissues.</p>
+<p>â€¢ Analyzed experimental data and communicated results in a written report.</p>
 <p><strong>Summer Research Assistant, Hampden-Sydney College</strong> Summer 2014<br />
 Performed experiment with Red-eared Sliders (Trachemys scripta elegans) measuring the interaction of ranavirus and herbicide exposures</p>
-<p>• Fed and monitored 160 juvenile turtles for 5 weeks. Weighed, measured, and assessed condition of turtles weekly. Euthanized and necropsied turtles, and collected tissues.</p>
-<p>• Extracted DNA from tissue samples collected from turtles during the experiment.</p>
-<p>• Tested presence/absence of ranavirus DNA in tissues using qPCR.</p>
+<p>â€¢ Fed and monitored 160 juvenile turtles for 5 weeks. Weighed, measured, and assessed condition of turtles weekly. Euthanized and necropsied turtles, and collected tissues.</p>
+<p>â€¢ Extracted DNA from tissue samples collected from turtles during the experiment.</p>
+<p>â€¢ Tested presence/absence of ranavirus DNA in tissues using qPCR.</p>
 <p><strong>Independent Study in Biology, Hampden-Sydney College</strong> Fall 2013 - Spring 2014 Continuation of research associated with survey study in summer 2013</p>
-<p>• Extracted DNA from tissues obtained from several snake, lizard and turtle species.</p>
-<p>• Analyzed DNA quantities using a spectrophotometer.</p>
-<p>• Performed PCR and Gel-Electrophoresis to determine the prevalence of ranavirus in reptiles in campus wetlands.</p>
+<p>â€¢ Extracted DNA from tissues obtained from several snake, lizard and turtle species.</p>
+<p>â€¢ Analyzed DNA quantities using a spectrophotometer.</p>
+<p>â€¢ Performed PCR and Gel-Electrophoresis to determine the prevalence of ranavirus in reptiles in campus wetlands.</p>
 <p><strong>Introductory Biology Lab Assistant, Hampden-Sydney College</strong> Spring 2014<br />
-• Taught introductory students various laboratory techniques.</p>
-<p>• Assisted instructor by answering student questions and guiding them through labs.</p>
+â€¢ Taught introductory students various laboratory techniques.</p>
+<p>â€¢ Assisted instructor by answering student questions and guiding them through labs.</p>
 <p><strong>Summer Research Assistant, Hampden-Sydney College</strong> Summer 2013 Survey of ranavirus in central Virginia reptiles (mentor: Dr. Rachel Goodman)</p>
-<p>• Set up artificial cover board array to survey herpetofauna on Hampden-Sydney campus.</p>
-<p>• Captured, weighed, measured, and took tissue samples from chelonians and squamates.</p>
-<p>• Developed skills in data entry, data analysis, and scientific writing.</p>
+<p>â€¢ Set up artificial cover board array to survey herpetofauna on Hampden-Sydney campus.</p>
+<p>â€¢ Captured, weighed, measured, and took tissue samples from chelonians and squamates.</p>
+<p>â€¢ Developed skills in data entry, data analysis, and scientific writing.</p>
 <p><strong>Awards and Grants</strong><br />
 Tennessee Fellowship for Graduate Excellence Recipient, $176,000 January 2018 UT Graduate Student Senate Travel Award, $690 April 2017</p>
 <p>International Symposium of Ranaviruses Travel Award, $1500 April 2017</p>
