@@ -18,6 +18,9 @@ navbar:
     - text: "Contact me"
       href: contact.html 
       icon: fas fa-phone
+    - text: "TWS Poster 2019"
+      href: TWS_Poster_Page_2019.html
+      icon: far fa-presentation
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter
