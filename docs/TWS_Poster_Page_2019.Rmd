@@ -7,11 +7,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Thanks for using the QR code! Hopefully you will find the Links/Supplementary files included on this page informative. Also, feel free to peruse my website! 
+#Thanks for using the QR code! Hopefully you will find the Links/Supplementary files included on this page informative. Also, feel free to peruse my website! 
 
-```{r cars}
-summary(cars)
-```
+[Contact Information](https://edaviscarter.github.io/DavisCarterWebsite/contact.html)
+
 
 ## Including Plots
 
