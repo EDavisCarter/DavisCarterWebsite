@@ -13,12 +13,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [Lab Website](https://ag.tennessee.edu/fwf/bsalproject/Pages/default.aspx)
 
-##Published Research Relating to this work 
- 
- **Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders** [Carter et al. 2019](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12675) 
+###Published Research Relating to this work 
+
+**Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders** [Carter et al. 2019](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12675) 
 
 **Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans in Amphibian Chytridiomycosis Using RNAScope in situ Hybridization** [Ossiboff et al. 2019](https://www.researchgate.net/publication/335608774_Differentiating_Batrachochytrium_dendrobatidis_and_B_salamandrivorans_in_Amphibian_Chytridiomycosis_Using_RNAScopeR_in_situ_Hybridization)
 
+#Unpublished work relating to susceptibility
+##**Use of these unpublished data is not permitted without permission granted from Dr. Matthew Gray**
+ 
 ## 
 
 Phylogenetic Tree showing clustering of clinical susceptibility (% Mortality) for species tested 
@@ -66,15 +69,12 @@ amphibiantreeNewNames$tip.label<-c("C. alleganiensis","P. shermani","P. metcalfi
                            "A. opacum","N. meridionalis","N. perstriatus","N. viridescens","T. torosa","T. granulosa","P. striatus","S. lacertina","S. holbrookii",
                            "R. catesbeiana","R. chiricahuensis","R. sylvatica","A. americanus","H. chrysoscelis","O. septentrionalis")
 circtree4<-ggtree(amphibiantreeNewNames,layout="circular")
-circtree4<-circtree3%<+%Amphibiandata2+geom_tiplab2(aes(color=Family),size=2.8,fontface="bold",hjust=0.05,offset=2)+ 
-  geom_tippoint(aes(size=Infectiona),alpha=0.25)
-circtree4<-circtree3+theme(legend.position="right")
+circtree4<-circtree4%<+%Amphibiandata2+geom_tiplab2(aes(color=Family),size=2.8,fontface="bold",hjust=0.05,offset=2)+ 
+  geom_tippoint(aes(size=Infection),alpha=0.25)
+circtree4<-circtree4+theme(legend.position="right")
 circtree4
 ```
-```{r echo=FALSE, results='asis'}
-library(knitr)
-kable(Amphibiandata[,c(1,3:11)],caption="Table showing life-stage tested, species, order, family, predicted dose required for %50 infection (ID50), predicted dose for %50 mortality (LD50), % Infected, % Mortality, Average *Bsal* Copies (found using qPCR), Max *Bsal* Copies, and Incubation period")
-```
+
 
 #Conceptual Framework of Susceptibility
 
@@ -84,9 +84,9 @@ kable(Amphibiandata[,c(1,3:11)],caption="Table showing life-stage tested, specie
 
 **2. Carriers** species that become infected but do not experience mortality
 
-**3. Highly susceptible** species which become infected easily and die from the pathogen
+**3. Low Tolerance** species which become infected easily and die from the pathogen
 
-**4. Superspreaders (Amplification hosts)** species which become infected at low doses but are tolerant of infection and persist for long durations of time
+**4. (Superspreaders) Amplification Host** species which become infected at low doses but are tolerant of infection and persist for long durations of time
 
 ![**Graph showing categories of susceptibility and clustering of species based on ID50 and LD50 values**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Susceptibility.png)
 
