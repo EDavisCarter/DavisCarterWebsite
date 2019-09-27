@@ -1,5 +1,5 @@
 ---
-title: "**TWS_Poster_Page**"
+title: "**Carter TWS Poster Page**"
 output: html_document
 ---
 
@@ -13,20 +13,99 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [Lab Website](https://ag.tennessee.edu/fwf/bsalproject/Pages/default.aspx)
 
+##Published Research Relating to this work 
+ 
+ **Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders** [Carter et al. 2019](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12675) 
+
+**Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans in Amphibian Chytridiomycosis Using RNAScope in situ Hybridization** [Ossiboff et al. 2019](https://www.researchgate.net/publication/335608774_Differentiating_Batrachochytrium_dendrobatidis_and_B_salamandrivorans_in_Amphibian_Chytridiomycosis_Using_RNAScopeR_in_situ_Hybridization)
 
 ## 
 
-You can also embed plots, for example:
+Phylogenetic Tree showing clustering of clinical susceptibility (% Mortality) for species tested 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r packages, echo=FALSE, include=FALSE}
+library("picante")
+library("ape")
+library("ggplot2")
+library("ggtree")
+library("treeio")
+library("tidyverse")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r mortality, echo=FALSE}
+library("picante")
+library("ape")
+library("ggplot2")
+library("ggtree")
+library("treeio")
+library("tidyverse")
+Amphibiandata <- KcalcForPoster <- read.csv("~/Gray Lab/R Script_Data files/R Code/KcalcForPoster.csv", row.names=1)
+Amphibiandata2<- KcalcForPoster <- read.csv("~/Gray Lab/R Script_Data files/R Code/KcalcForPoster.csv")
+amphibiantree<-read.tree("~/Gray Lab/R Script_Data files/R Code/SpeciesNames.nwk")
+amphibiantreeNewNames<-amphibiantree
+amphibiantreeNewNames$tip.label<-c("C. alleganiensis","P. shermani","P. metcalfi","A. aeneus","D. ocoee","D. monticola", "D. aeneus","E. eschscholtzii",
+                           "H. scutatum","A. cephalica","C. terrestris","E. wilderae","E. lucifuga","P. ruber","N. maculosus","A. mexicanum","A. laterale",
+                           "A. opacum","N. meridionalis","N. perstriatus","N. viridescens","T. torosa","T. granulosa","P. striatus","S. lacertina","S. holbrookii",
+                           "R. catesbeiana","R. chiricahuensis","R. sylvatica","A. americanus","H. chrysoscelis","O. septentrionalis")
+circtree3<-ggtree(amphibiantreeNewNames,layout="circular")
+circtree3<-circtree3%<+%Amphibiandata2+geom_tiplab2(aes(color=Family),size=2.8,fontface="bold",hjust=0.05,offset=2)+ 
+  geom_tippoint(aes(size=Mortality),alpha=0.25)
+circtree3<-circtree3+theme(legend.position="right")
+circtree3
+```
+##
 
-##Published Research Relating to this work 
- 
- **Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders**
-[Carter et al. 2019](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12675) 
+Phylogenetic tree showing clustering of infection (% infected) for species challenged with *Bsal*
+```{r infection, echo=FALSE}
+Amphibiandata <- KcalcForPoster <- read.csv("~/Gray Lab/R Script_Data files/R Code/KcalcForPoster.csv", row.names=1)
+Amphibiandata2<- KcalcForPoster <- read.csv("~/Gray Lab/R Script_Data files/R Code/KcalcForPoster.csv")
+amphibiantree<-read.tree("~/Gray Lab/R Script_Data files/R Code/SpeciesNames.nwk")
+amphibiantreeNewNames<-amphibiantree
+amphibiantreeNewNames$tip.label<-c("C. alleganiensis","P. shermani","P. metcalfi","A. aeneus","D. ocoee","D. monticola", "D. aeneus","E. eschscholtzii",
+                           "H. scutatum","A. cephalica","C. terrestris","E. wilderae","E. lucifuga","P. ruber","N. maculosus","A. mexicanum","A. laterale",
+                           "A. opacum","N. meridionalis","N. perstriatus","N. viridescens","T. torosa","T. granulosa","P. striatus","S. lacertina","S. holbrookii",
+                           "R. catesbeiana","R. chiricahuensis","R. sylvatica","A. americanus","H. chrysoscelis","O. septentrionalis")
+circtree4<-ggtree(amphibiantreeNewNames,layout="circular")
+circtree4<-circtree3%<+%Amphibiandata2+geom_tiplab2(aes(color=Family),size=2.8,fontface="bold",hjust=0.05,offset=2)+ 
+  geom_tippoint(aes(size=Infectiona),alpha=0.25)
+circtree4<-circtree3+theme(legend.position="right")
+circtree4
+```
+```{r echo=FALSE, results='asis'}
+library(knitr)
+kable(Amphibiandata[,c(1,3:11)],caption="Table showing life-stage tested, species, order, family, predicted dose required for %50 infection (ID50), predicted dose for %50 mortality (LD50), % Infected, % Mortality, Average *Bsal* Copies (found using qPCR), Max *Bsal* Copies, and Incubation period")
+```
+#Conceptual Framework of Susceptibility
+
+**Plotting the ID50 and LD50 values calculated for each species that experienced mortality and infection allows us to begin formulating ideas regarding their epidemiological role in *Bsal* disease dynamics.  Species can be seperated into four categories.**
+
+**1. Resistant** species that do not become infected
+
+**2. Carriers** species that become infected but do not experience mortality
+
+**3. Highly susceptible** species which become infected easily and die from the pathogen
+
+**4. Superspreaders (Amplification hosts)** species which become infected at low doses but are tolerant of infection and persist for long durations of time
+
+![**Graph showing categories of susceptibility and clustering of species based on ID50 and LD50 values**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Susceptibility.png)
+
+
+
+**Representative photos of *Bsal* lesions observed on several North American amphibian species**
+
+![**Focal lesions observed on an Eastern Newt (Notophthalmus viridescens)**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/464A6064%20(1).JPG)
+
+![**Focal lesions observed on a Rough skinned newt (Taricha granulosa)**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/464A6447resized.JPG)
+
+![**Large ulceration and focal lesions observed on a Yellow-spotted salamander (Ensatina erschoscholerii**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/IMG_7197.JPG)
+
+
+**Photos of *Bsal* Zoospores and Zoosporangia stained with Calcoflour White (CFW) at various magnifications**
+
+![**10X Magnification+CFW**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/CTF-10X%2BCFW2_Plate_M_p00_0_C04f00d0.JPG)
+
+![**20X Magnification+CFW**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/CTF-20X%2BCFW_Plate_M_p01_0_C04f01d0.JPG)
+
 
 ##Literature Cited in Poster
+
