@@ -7,20 +7,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Thanks for using the QR code! Hopefully you will find the Links/Supplementary files included on this page informative. Also, feel free to peruse my website!** 
+**Thanks for using the QR code! Hopefully you will find the Links/Supplementary files included on this page informative. Also, feel free to peruse my website!** <i class="far fa-grin"></i>
 
 [Contact Information](https://edaviscarter.github.io/DavisCarterWebsite/contact.html)
 
 [Lab Website](https://ag.tennessee.edu/fwf/bsalproject/Pages/default.aspx)
 
-###Published Research Relating to this work 
+###Published Research Relating to this work <i class="fas fa-book"></i>
 
 **Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders** [Carter et al. 2019](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12675) 
 
 **Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans in Amphibian Chytridiomycosis Using RNAScope in situ Hybridization** [Ossiboff et al. 2019](https://www.researchgate.net/publication/335608774_Differentiating_Batrachochytrium_dendrobatidis_and_B_salamandrivorans_in_Amphibian_Chytridiomycosis_Using_RNAScopeR_in_situ_Hybridization)
 
 #Unpublished work relating to susceptibility
-##**Use of these unpublished data is not permitted without permission granted from Dr. Matthew Gray**
+##<i class="fas fa-stop-circle" style="color: firebrick"></i> **Use of these unpublished data is not permitted without permission granted from Dr. Matthew Gray** <i class="fas fa-stop-circle" style="color: firebrick"></i>
  
 ## 
 
@@ -76,7 +76,7 @@ circtree4
 ```
 
 
-#Conceptual Framework of Susceptibility
+#Conceptual Framework of Susceptibility <i class="far fa-lightbulb"></i>
 
 **Plotting the ID50 and LD50 values calculated for each species that experienced mortality and infection allows us to begin formulating ideas regarding their epidemiological role in *Bsal* disease dynamics.  Species can be seperated into four categories.**
 
@@ -86,7 +86,7 @@ circtree4
 
 **3. Low Tolerance** species which become infected easily and die from the pathogen
 
-**4. (Superspreaders) Amplification Host** species which become infected at low doses but are tolerant of infection and persist for long durations of time
+**4. Amplification Host (Superspreaders)** species which become infected at low doses but are tolerant of infection and persist for long durations of time
 
 ![**Graph showing categories of susceptibility and clustering of species based on ID50 and LD50 values**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Susceptibility.png)
 
@@ -105,6 +105,7 @@ circtree4
 
 ![**10X Magnification+CFW**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/CTF-10X%2BCFW2_Plate_M_p00_0_C04f00d0.JPG)
 
+![[**Video of Zoosporangia containing zoospores**]](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/CTFVideoZoosporangia.mp4)
 
 ##Literature Cited in Poster
 
