@@ -1,6 +1,10 @@
 
 ---
 title: "**WELCOME**"
+output: 
+  html_document:
+    includes:
+       in_header: GoogleAnalytics.Rhtml
 ---
 
 
