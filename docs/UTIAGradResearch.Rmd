@@ -23,17 +23,21 @@ library(plyr)
 *** 
 #Additional Methods 
 
+![**1. *Bsal* was grown inside an incubation chamber at 15C prior to being harvested for the experiment.**](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/IMG_20180402_154930.jpg?raw=true)
 
-![**1. Animals were exposed in 200mL tubes containing 9mL of H2O and 1mL of the assigned *Bsal* dose.**](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/Inoculation.png?raw=true)
+![**2. Animals were exposed in 200mL tubes containing 9mL of H2O and 1mL of the assigned *Bsal* dose.**](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/Inoculation.png?raw=true)
 
-![**2. Animals were held in the inoculation tubes for 24hrs. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/ExposureTubes.jpg?raw=true)
+![**3. Animals were held in the inoculation tubes for 24hrs. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/ExposureTubes.jpg?raw=true)
 
-![**3. Following exposure animals were placed in individuals containers and held at a constant temperature inside environmental chambers. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/EnvironmentalChamber.jpg?raw=true)
+![**4. Following exposure animals were placed in individuals containers and held at a constant temperature inside environmental chambers. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/EnvironmentalChamber.jpg?raw=true)
 
+![**5. Animals were examined twice daily for signs of disease. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/NewtInspection.JPG?raw=true)
 
+![**6. Animals were swabbed every 3 days and at necropsy. DNA was extracted from the swabs to determine infection status and *Bsal* load. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/NewtSwab.JPG?raw=true)
 
+***
 
-
+#Additional Results
 
 ####The figure shown below displays how log (*Bsal* copies+1) growth differs between life-stages exposed. Efts and adult newts reach similar loads at 14C, however efts exposed at 6C and 22C develop higher *Bsal* loads.  
 ```{r plots, echo=FALSE, warning= FALSE,fig.height = 10, fig.width = 10, fig.align = "center"}
