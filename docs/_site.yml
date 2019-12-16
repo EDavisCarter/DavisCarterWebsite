@@ -23,7 +23,7 @@ navbar:
       icon: fas fa-bullhorn
     - text: "UTIA Graduate Research Poster Symposium"
       href: UTIAGradResearch.html
-      
+      icon: fas fa-bullhorn
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter

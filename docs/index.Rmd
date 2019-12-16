@@ -1,7 +1,7 @@
 
 ---
 title: "**WELCOME**"
-output: 
+output: html_document
   html_document:
     includes:
        in_header: GoogleAnalytics.Rhtml
