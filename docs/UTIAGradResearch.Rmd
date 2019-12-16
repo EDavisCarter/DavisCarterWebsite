@@ -13,6 +13,10 @@ library(plyr)
 ## Thank you for scanning the QR code. Hopefully you will find the additional information included on this page valauble. 
 
 
+#Unpublished work relating to Eastern newt Bsal susceptibility
+##<i class="fas fa-stop-circle" style="color: firebrick"></i> **Use of these unpublished data is not permitted without permission granted from Dr. Matthew Gray** <i class="fas fa-stop-circle" style="color: firebrick"></i>
+ 
+
 ```{r plots, echo=FALSE, warning= FALSE,fig.height = 10, fig.width = 10, fig.align = "center"}
 NOVI_NSF_CopyData <- read.csv("~/Gray Lab/R Script_Data files/CSV Files/NOVI_NSF_CopyData.csv")
 
