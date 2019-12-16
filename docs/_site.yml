@@ -21,7 +21,7 @@ navbar:
     - text: "TWS Poster 2019"
       href: TWS_Poster_Page_2019.html
       icon: fas fa-bullhorn
-    - text: "UTIA Graduate Research Poster Symposium"
+    - text: "UTIA Poster Symposium"
       href: UTIAGradResearch.html
       icon: fas fa-bullhorn
   right:
