@@ -13,7 +13,7 @@ library(plyr)
 ## Thank you for scanning the QR code. Hopefully you will find the additional information included on this page valauble. 
 
 
-```{r plots, echo=FALSE, warning= FALSE}
+```{r plots, echo=FALSE, warning= FALSE,fig.height = 10, fig.width = 10, fig.align = "center"}
 NOVI_NSF_CopyData <- read.csv("~/Gray Lab/R Script_Data files/CSV Files/NOVI_NSF_CopyData.csv")
 
 NOVI_NSF_CopyData$Quantity<-as.numeric(NOVI_NSF_CopyData$Quantity)
@@ -48,9 +48,8 @@ GrowthPlotAllDatabyTreatment<- ggplot(AllGrowthData, aes(x=Swab, y=logCopies, gr
   facet_wrap(Temp~Treatment)+
   scale_color_manual(values=c("orangered2","gold"))
 
-
-
-grid.arrange(GrowthPlotAllDatabyTemp,GrowthPlotAllDatabyTreatment,nrow=2)
+GrowthPlotAllDatabyTreatment
+GrowthPlotAllDatabyTemp
 
 ```
 
