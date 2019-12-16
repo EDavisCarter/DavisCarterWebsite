@@ -22,7 +22,8 @@ navbar:
       href: TWS_Poster_Page_2019.html
       icon: fas fa-bullhorn
     - text: "UTIA Graduate Research Poster Symposium"
-      href: UTIAGradResearch.
+      href: UTIAGradResearch.html
+      
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter
