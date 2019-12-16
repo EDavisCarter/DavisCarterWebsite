@@ -1,28 +1,60 @@
 ---
-title: "UTIA_Graduate_Student_Poster"
+title: "Winter is Coming"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(gridExtra)
+library(plyr)
 ```
 
-## R Markdown
+## Thank you for scanning the QR code. Hopefully you will find the additional information included on this page valauble. 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r plots, echo=FALSE, warning= FALSE}
+NOVI_NSF_CopyData <- read.csv("~/Gray Lab/R Script_Data files/CSV Files/NOVI_NSF_CopyData.csv")
 
-```{r cars}
-summary(cars)
+NOVI_NSF_CopyData$Quantity<-as.numeric(NOVI_NSF_CopyData$Quantity)
+NOVI_NSF_CopyData$logCopies<-log10(NOVI_NSF_CopyData$Quantity+1)
+
+data_summary <- function(data, varname, groupnames){
+  summary_func <- function(x, col){
+    c(mean = mean(x[[col]], na.rm=TRUE),
+      sd = sd(x[[col]], na.rm=TRUE))
+  }
+  data_sum<-ddply(data, groupnames, .fun=summary_func,
+                  varname)
+  data_sum <- rename(data_sum, c("mean" = varname))
+  return(data_sum)
+}
+AllGrowthData<-data_summary(NOVI_NSF_CopyData,varname="logCopies",groupnames=c("Treatment","Swab","Temp","LifeStage"))
+AllGrowthData$Temp <- factor(AllGrowthData$Temp , levels = c("6C", "14C", "22C"))
+
+GrowthPlotAllDatabyTemp<- ggplot(AllGrowthData, aes(x=Swab, y=logCopies, group=Treatment,colour=Treatment)) + 
+  geom_point(size=4)+geom_line()+
+  geom_errorbar(aes(ymin=logCopies-sd, ymax=logCopies+sd), width=.2,
+                position=position_dodge(0.05))+ggtitle("Bsal Growth by Treatment, Temperature and Life Stage")+
+  facet_wrap(LifeStage~Temp)+
+  scale_color_manual(values=c("forestgreen","gold","plum2","firebrick"))
+
+
+
+GrowthPlotAllDatabyTreatment<- ggplot(AllGrowthData, aes(x=Swab, y=logCopies, group=LifeStage,colour=LifeStage)) + 
+  geom_point(size=4)+geom_line()+
+  geom_errorbar(aes(ymin=logCopies-sd, ymax=logCopies+sd), width=.2,
+                position=position_dodge(0.05))+
+  facet_wrap(Temp~Treatment)+
+  scale_color_manual(values=c("orangered2","gold"))
+
+
+
+grid.arrange(GrowthPlotAllDatabyTemp,GrowthPlotAllDatabyTreatment,nrow=2)
+
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
