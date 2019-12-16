@@ -1,5 +1,5 @@
 ---
-title: "Winter is Coming"
+title: "**Winter is Coming: Temperature Dependent Virulence of *Batrachochytrium salamandrivorans***"
 output: html_document
 ---
 
@@ -9,14 +9,33 @@ library(ggplot2)
 library(gridExtra)
 library(plyr)
 ```
+### **E. Davis Carter**, Debra L. Miller, Brittany A. Bajo, Anna C. Peterson, Markese Bohanon, Kurt Ash, Pattarawan Watcharaanantapong, and Matthew J Gray
+[Contact Information](https://edaviscarter.github.io/DavisCarterWebsite/contact.html)
+[Lab Website](https://ag.tennessee.edu/fwf/bsalproject/Pages/default.aspx)
 
-## Thank you for scanning the QR code. Hopefully you will find the additional information included on this page valauble. 
+***
 
+#### Thank you for scanning the QR code. Hopefully you will find the additional information included on this page valuable. 
 
-#Unpublished work relating to Eastern newt Bsal susceptibility
+***
+##Unpublished work relating to Eastern newt *Bsal* susceptibility
 ##<i class="fas fa-stop-circle" style="color: firebrick"></i> **Use of these unpublished data is not permitted without permission granted from Dr. Matthew Gray** <i class="fas fa-stop-circle" style="color: firebrick"></i>
- 
+*** 
+#Additional Methods 
 
+
+![**1. Animals were exposed in 200mL tubes containing 9mL of H2O and 1mL of the assigned *Bsal* dose.**](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/Inoculation.png?raw=true)
+
+![**2. Animals were held in the inoculation tubes for 24hrs. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/ExposureTubes.jpg?raw=true)
+
+![**3. Following exposure animals were placed in individuals containers and held at a constant temperature inside environmental chambers. **](https://github.com/EDavisCarter/DavisCarterWebsite/blob/master/EnvironmentalChamber.jpg?raw=true)
+
+
+
+
+
+
+####The figure shown below displays how log (*Bsal* copies+1) growth differs between life-stages exposed. Efts and adult newts reach similar loads at 14C, however efts exposed at 6C and 22C develop higher *Bsal* loads.  
 ```{r plots, echo=FALSE, warning= FALSE,fig.height = 10, fig.width = 10, fig.align = "center"}
 NOVI_NSF_CopyData <- read.csv("~/Gray Lab/R Script_Data files/CSV Files/NOVI_NSF_CopyData.csv")
 
@@ -36,15 +55,6 @@ data_summary <- function(data, varname, groupnames){
 AllGrowthData<-data_summary(NOVI_NSF_CopyData,varname="logCopies",groupnames=c("Treatment","Swab","Temp","LifeStage"))
 AllGrowthData$Temp <- factor(AllGrowthData$Temp , levels = c("6C", "14C", "22C"))
 
-GrowthPlotAllDatabyTemp<- ggplot(AllGrowthData, aes(x=Swab, y=logCopies, group=Treatment,colour=Treatment)) + 
-  geom_point(size=4)+geom_line()+
-  geom_errorbar(aes(ymin=logCopies-sd, ymax=logCopies+sd), width=.2,
-                position=position_dodge(0.05))+ggtitle("Bsal Growth by Treatment, Temperature and Life Stage")+
-  facet_wrap(LifeStage~Temp)+
-  scale_color_manual(values=c("forestgreen","gold","plum2","firebrick"))
-
-
-
 GrowthPlotAllDatabyTreatment<- ggplot(AllGrowthData, aes(x=Swab, y=logCopies, group=LifeStage,colour=LifeStage)) + 
   geom_point(size=4)+geom_line()+
   geom_errorbar(aes(ymin=logCopies-sd, ymax=logCopies+sd), width=.2,
@@ -52,10 +62,25 @@ GrowthPlotAllDatabyTreatment<- ggplot(AllGrowthData, aes(x=Swab, y=logCopies, gr
   facet_wrap(Temp~Treatment)+
   scale_color_manual(values=c("orangered2","gold"))
 
+
 GrowthPlotAllDatabyTreatment
-GrowthPlotAllDatabyTemp
 
 ```
+
+***
+
+####The figure shown below displays how log (*Bsal* copies+1) growth increases after exposure for each exposure dose. *Bsal* loads at lower doses increase over time, however it takes a longer duration for the growth to reach loads experienced by those exposed to the highest exposure doses. 
+```{r plots2, echo=FALSE, warning= FALSE,fig.height = 10, fig.width = 10, fig.align = "center"}
+GrowthPlotAllDatabyTemp<- ggplot(AllGrowthData, aes(x=Swab, y=logCopies, group=Treatment,colour=Treatment)) + 
+  geom_point(size=4)+geom_line()+
+  geom_errorbar(aes(ymin=logCopies-sd, ymax=logCopies+sd), width=.2,
+                position=position_dodge(0.05))+
+  facet_wrap(LifeStage~Temp)+
+  scale_color_manual(values=c("forestgreen","gold","plum2","firebrick"))
+GrowthPlotAllDatabyTemp
+```
+
+***
 
 
 
