@@ -1,7 +1,10 @@
 
 ---
 title: "Who am I? How did I get here?"
-output: html_document
+output: 
+ html_document:
+    includes:
+       in_header: GoogleAnalytics.Rhtml
 ---
 <!-- blank line -->
 ----

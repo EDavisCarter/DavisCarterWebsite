@@ -23,13 +23,13 @@ navbar:
       icon: fas fa-bullhorn
     - text: "UTIA Poster Symposium"
       href: UTIAGradResearch.html
-      icon: fas fa-bullhorn
+      icon: far fa-snowflake
   right:
       - icon: fa-github fa-lg
         href: https://github.com/EDavisCarter
       - icon: fa-linkedin fa-lg
         href: https://www.linkedin.com/in/davis-carter-990496b2/
-      - icon: ![](https://www.researchgate.net/favicon.ico)
+      - icon: fab fa-researchgate
         href: https://www.researchgate.net/profile/Edward_Carter8
 
 

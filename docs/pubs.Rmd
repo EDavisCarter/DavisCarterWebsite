@@ -1,7 +1,10 @@
 
 ---
 title: "Publications and Presentations"
-output: html_document
+output: 
+ html_document:
+    includes:
+       in_header: GoogleAnalytics.Rhtml
 ---
 
 ```{r setup, include=FALSE}
