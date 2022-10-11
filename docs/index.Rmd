@@ -8,7 +8,7 @@ output:
 ---
 
 
-###Thanks for taking a look at my website. Check out the contact tab if you want to reach out to me.
+### Thanks for taking a look at my website. Check out the contact tab if you want to reach out to me.
 
 
 ![**Charlies Bunion, GSMNP**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Profpic1.jpg)

@@ -15,14 +15,19 @@ knitr::opts_chunk$set(echo = TRUE)
                                                                                               
 **Education** 
 
-**Ph.D. (First Year), University of Tennessee-Knoxville**
+**Postdoc, University of Tennessee-Knoxville**, 2022-2023
 
-Natural Resources (Concentration = Wildlife Health), University of Tennessee-Knoxville, Fall 2018 
-**M.S., University of Tennessee-Knoxville** , August 2018 
+UT Amphibian Disease Laboratory
 
-Major = Wildlife and Fisheries Science, Concentration = Wildlife Health, GPA: 3.97
+**Ph.D., University of Tennessee-Knoxville** , 2018-2022
 
-**B.S., Hampden-Sydney College** , May 2015
+Natural Resources (Concentration = Wildlife Health)
+
+**M.S., University of Tennessee-Knoxville** , 2016-2018
+
+Major = Wildlife and Fisheries Science, Concentration = Wildlife Health 
+
+**B.S., Hampden-Sydney College** , 2011-2015
 
 Major = Biology, Minor = German
 
