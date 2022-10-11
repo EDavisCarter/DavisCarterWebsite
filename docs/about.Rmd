@@ -9,7 +9,7 @@ output:
 <!-- blank line -->
 ----
 * Name: **Davis Carter**    
-* Current Position: Second Year PhD student    
+* Current Position: Post Doc UTK Amphibian Disease Lab   
 * Research Interest: Amphibian Disease Ecology   
 
 
