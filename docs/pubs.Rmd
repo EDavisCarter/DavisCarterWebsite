@@ -15,21 +15,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **PUBLISHED:** 
 
-1.  **E Davis Carter**, Miller DL, Peterson AN, Sutton W, Cusaac JPW, Spatz JA, Rollins-Smith LA, Reinert LK, Bohanon M, Williams LA, Upchurch A, Gray MJ.  Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders. 2019 Conservation Letters.
+1. Olson D.H., Gray, M.J., Pasmans, F., Grayfer, L., Wilber M.Q., Carter, E.D., Cunningham A.A., (2022) The Rising Tide of Herpetological Disease Science and Management. Herpetological Review. In Press
+2. Towe, A. E., Gray, M. J., Carter, E. D., Wilber, M. Q., Ossiboff, R. J., Ash, K., Bohanon, M., Bajo, B. A., & Miller, D. L. (2021). Batrachochytrium salamandrivorans Can Devour More than Salamanders. Journal of Wildlife Diseases. DOI: 10.7589/JWD-D-20-00214.
+3. Goodman, R. M., Carter, E. D., & Miller, D. L. (2021). Influence of Herbicide Exposure and Ranavirus Infection on Growth and Survival of Juvenile Red-Eared Slider Turtles (Trachemys scripta elegans). Viruses. DOI: 10.3390/v13081440.
+4. Wilber, M. Q., Carter, E. D., Gray, M. J., & Briggs, C. J. (2021). Putative resistance and tolerance mechanisms have little impact on disease progression for an emerging salamander pathogen. Functional Ecology. DOI: 10.1111/1365-2435.13754.
+5. Cusaac, J. P. W., Carter, E. D., Woodhams, D. C., Robert, J., Spatz, J. A., Howard, J. L., Lillard, C., Graham, A. W., Hill, R. D., Reinsch, S., McGinnity, D., Reeves, B., Bemis, D., Wilkes, R. P., Sutton, W. B., Waltzek, T. B., Hardman, R. H., Miller, D. L., & Gray, M. J. (2021). Emerging Pathogens and a Current-Use Pesticide: Potential Impacts on Eastern Hellbenders. Journal of Aquatic Animal Health. DOI: 10.1002/aah.10117
+6. Carter, E. D., Bletz, M. C., Le Sage, M., LaBumbard, B., Rollins-Smith, L. A., Woodhams, D. C., Miller, D. L., & Gray, M. J. (2021). Winter is coming–Temperature affects immune defenses and susceptibility to Batrachochytrium salamandrivorans. Plos Pathogens. DOI: 10.1371/journal.ppat.1009234.
+7. Tompros, A., Dean, A. D., Fenton, A., Wilber, M. Q., Carter, E. D., & Gray, M. J. (2021). Frequency-dependent transmission of Batrachochytrium salamandrivorans in eastern newts. Transboundary and Emerging Diseases. DOI: 10.1111/tbed.14043.
+8. Robinson, K. A., Pereira, K. E., Bletz, M. C., Carter, E. D., Gray, M. J., Piovia-Scott, J., Romansic, J. M., Woodhams, D. C., & Fritz-Laylin, L. (2020). Isolation and maintenance of Batrachochytrium salamandrivorans cultures. Diseases of Aquatic Organisms. DOI: 10.3354/dao03488.
+9. Malagon, D. A., Melara, L. A., Prosper, O. F., Lenhart, S., Carter, E. D., Fordyce, J. A., Peterson, A. C., Miller, D. L., & Gray, M. J. (2020). Host density and habitat structure influence host contact rates and Batrachochytrium salamandrivorans transmission. Scientific Reports. DOI: 10.1038/s41598-020-62351-x.
+10. Kumar, R., Malagon, D. A., Carter, E. D., Miller, D. L., Bohanon, M. L., Cusaac, J. P. W., Peterson, A. C., & Gray, M. J. (2020). Experimental methodologies can affect pathogenicity of Batrachochytrium salamandrivorans infections. Plos One. DOI: 10.1371/journal.pone.0235370
+11. Carter, E. D., Miller, D. L., Peterson, A. C., Sutton, W. B., Cusaac, J. P. W., Spatz, J. A., Rollins-Smith, L., Reinert, L., Bohanon, M., Williams, L. A., Upchurch, A., & Gray, M. J. (2019). Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders. Conservation Letters. DOI: 10.1111/conl.12675.
+12. Ossiboff, R. J., Towe, A. E., Brown, M. A., Longo, A. V., Lips, K. R., Miller, D. L., Carter, E. D., Gray, M. J., & Frasca, S. (2019). Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans in Amphibian Chytridiomycosis Using RNAScope®in situ Hybridization. Frontiers in Veterinary Science. DOI:  10.3389/fvets.2019.00304.
+13. Peace, A., O’Regan, S. M., Spatz, J. A., Reilly, P. N., Hill, R. D., Carter, E. D., Wilkes, R. P., Waltzek, T. B., Miller, D. L., & Gray, M. J. (2019). A highly invasive chimeric ranavirus can decimate tadpole populations rapidly through multiple transmission pathways. Ecological Modelling. DOI: 10.1016/j.ecolmodel.2019.108777Get.
+14. Casais, R., Larrinaga, A. R., Dalton, K. P., Domínguez Lapido, P., Márquez, I., Bécares, E., Carter, E. D., Gray, M. J., Miller, D. L., & Balseiro, A. (2019). Water sports could contribute to the translocation of ranaviruses. Scientific Reports. DOI: 10.1038/s41598-019-39674-5.
+15. Goodman, R. M., Hargadon, K. M., & Carter, E.D. (2018). Detection of Ranavirus in Eastern Fence Lizards and Eastern Box Turtles in Central Virginia. Northeastern Naturalist, 25, 391 - 398. DOI: 10.1656/045.025.0306.
+16. Gray, M. J., Spatz, J. A., Carter, E. D., Yarber, C. M., Wilkes, R. P., & Miller, D. L. (2018). Poor biosecurity could lead to disease outbreaks in animal populations. Plos One. DOI: 10.1371/journal.pone.0193243.
+17. Goodman, R. M., & Carter, E. D. (2017). Survey of Herpetofauna on the Campus of Hampden-Sydney College in Prince Edward County, Virginia. Journal of the Virginia Herpetological Society.
+18. Carter, E. D., & Goodman, R. M. (2013). County Record: Storeria dekayi (Northern Brown Snake) Prince Edward County Va [County Record]. Catesbeiana. 
 
-2. Ossiboff RJ, Towe AE, Brown MA, Longo AV, Lips KR, Miller DL, **Carter ED**, Gray MJ, Frasca S. Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans in Amphibian Chytridiomycosis Using RNAScope® in situ Hybridization. 2019. Frontiers in Veterinary Science.
-
-3.  Peace A, O’Regan SM, Spatz JA, Reilly PN, Hill RD, **Carter ED**, Wilkes RP, Waltzek TB, Miller DL, Gray MJ. Dominant transmission pathways depend on population size for a highly virulent, chimeric pathogen. Oikos.
-
-4.  Casais R, Larrinaga AR, Dalton KP, Lapido PD, Marquez I, Becares A, **Carter ED**, Gray MJ, Miller DL, Balseiro A. Water sports could contribute to the translocation of ranaviruses. 2019.Scientific Reports. 
-
-5.  Goodman R, Hargadon KM, **Carter ED**.Detection of Ranavirus in Eastern Fence Lizards and Eastern Box Turtles in Central Virginia. 2018. Northeastern Naturalist.
-
-6.	Gray MJ, Spatz JA, **Carter ED**, Miller DL. Poor Biosecurity Could Lead to Disease Outbreaks in Animal Populations. 2018. PLoS ONE. 
-
-7.	Goodman RM. **Carter ED**. 2017. Survey of Hepetofauna on the Campus of Hampden-Sydney Collece Prince Edward County, Virginia. Catesbeiana 32:2
-
-8.	**Carter ED**. Goodman RM. 2014. Storeria dekayi dekayi (Northern Brown Snake). County record. Catesbeiana 34:1.
 
 **IN REVIEW:**
 

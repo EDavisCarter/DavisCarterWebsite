@@ -13,12 +13,22 @@
 
 <title>Publications and Presentations</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -41,12 +51,16 @@
 
 </html>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -59,32 +73,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -95,10 +85,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -115,40 +101,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h2 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h3 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h4 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h5 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h6 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -176,7 +138,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -188,7 +150,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -199,10 +161,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -214,7 +189,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -281,7 +255,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -292,51 +266,37 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fas fa fas fa-home"></span>
+    <span class="fas fa-home"></span>
      
     Welcome Tab
   </a>
 </li>
 <li>
   <a href="about.html">
-    <span class="fas fa fas fa-user"></span>
+    <span class="fas fa-user"></span>
      
     About Me
   </a>
 </li>
 <li>
   <a href="pubs.html">
-    <span class="fal fa fal fa-book-open"></span>
+    <span class="fal fa-book-open"></span>
      
     Pubs/Pres
   </a>
 </li>
 <li>
   <a href="CV.html">
-    <span class="fas fa fas fa-paperclip"></span>
+    <span class="fas fa-paperclip"></span>
      
     CV
   </a>
 </li>
 <li>
   <a href="contact.html">
-    <span class="fas fa fas fa-phone"></span>
+    <span class="fas fa-phone"></span>
      
     Contact me
-  </a>
-</li>
-<li>
-  <a href="TWS_Poster_Page_2019.html">
-    <span class="fas fa fas fa-bullhorn"></span>
-     
-    TWS Poster 2019
-  </a>
-</li>
-<li>
-  <a href="UTIAGradResearch.html">
-    <span class="far fa far fa-snowflake"></span>
-     
-    UTIA Poster Symposium
   </a>
 </li>
       </ul>
@@ -355,7 +315,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="https://www.researchgate.net/profile/Edward_Carter8">
-    <span class="fab fa fab fa-researchgate"></span>
+    <span class="fab fa-researchgate"></span>
      
   </a>
 </li>
@@ -364,7 +324,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -377,46 +337,173 @@ $(document).ready(function () {
 <h2><strong>Publications</strong></h2>
 <p><strong>PUBLISHED:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p><strong>E Davis Carter</strong>, Miller DL, Peterson AN, Sutton W, Cusaac JPW, Spatz JA, Rollins-Smith LA, Reinert LK, Bohanon M, Williams LA, Upchurch A, Gray MJ. Conservation risk of Batrachochytrium salamandrivorans to endemic lungless salamanders. 2019 Conservation Letters.</p></li>
-<li><p>Ossiboff RJ, Towe AE, Brown MA, Longo AV, Lips KR, Miller DL, <strong>Carter ED</strong>, Gray MJ, Frasca S. Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans in Amphibian Chytridiomycosis Using RNAScope® in situ Hybridization. 2019. Frontiers in Veterinary Science.</p></li>
-<li><p>Peace A, O’Regan SM, Spatz JA, Reilly PN, Hill RD, <strong>Carter ED</strong>, Wilkes RP, Waltzek TB, Miller DL, Gray MJ. Dominant transmission pathways depend on population size for a highly virulent, chimeric pathogen. Oikos.</p></li>
-<li><p>Casais R, Larrinaga AR, Dalton KP, Lapido PD, Marquez I, Becares A, <strong>Carter ED</strong>, Gray MJ, Miller DL, Balseiro A. Water sports could contribute to the translocation of ranaviruses. 2019.Scientific Reports.</p></li>
-<li><p>Goodman R, Hargadon KM, <strong>Carter ED</strong>.Detection of Ranavirus in Eastern Fence Lizards and Eastern Box Turtles in Central Virginia. 2018. Northeastern Naturalist.</p></li>
-<li><p>Gray MJ, Spatz JA, <strong>Carter ED</strong>, Miller DL. Poor Biosecurity Could Lead to Disease Outbreaks in Animal Populations. 2018. PLoS ONE.</p></li>
-<li><p>Goodman RM. <strong>Carter ED</strong>. 2017. Survey of Hepetofauna on the Campus of Hampden-Sydney Collece Prince Edward County, Virginia. Catesbeiana 32:2</p></li>
-<li><p><strong>Carter ED</strong>. Goodman RM. 2014. Storeria dekayi dekayi (Northern Brown Snake). County record. Catesbeiana 34:1.</p></li>
+<li>Olson D.H., Gray, M.J., Pasmans, F., Grayfer, L., Wilber M.Q.,
+Carter, E.D., Cunningham A.A., (2022) The Rising Tide of Herpetological
+Disease Science and Management. Herpetological Review. In Press</li>
+<li>Towe, A. E., Gray, M. J., Carter, E. D., Wilber, M. Q., Ossiboff, R.
+J., Ash, K., Bohanon, M., Bajo, B. A., &amp; Miller, D. L. (2021).
+Batrachochytrium salamandrivorans Can Devour More than Salamanders.
+Journal of Wildlife Diseases. DOI: 10.7589/JWD-D-20-00214.</li>
+<li>Goodman, R. M., Carter, E. D., &amp; Miller, D. L. (2021). Influence
+of Herbicide Exposure and Ranavirus Infection on Growth and Survival of
+Juvenile Red-Eared Slider Turtles (Trachemys scripta elegans). Viruses.
+DOI: 10.3390/v13081440.</li>
+<li>Wilber, M. Q., Carter, E. D., Gray, M. J., &amp; Briggs, C. J.
+(2021). Putative resistance and tolerance mechanisms have little impact
+on disease progression for an emerging salamander pathogen. Functional
+Ecology. DOI: 10.1111/1365-2435.13754.</li>
+<li>Cusaac, J. P. W., Carter, E. D., Woodhams, D. C., Robert, J., Spatz,
+J. A., Howard, J. L., Lillard, C., Graham, A. W., Hill, R. D., Reinsch,
+S., McGinnity, D., Reeves, B., Bemis, D., Wilkes, R. P., Sutton, W. B.,
+Waltzek, T. B., Hardman, R. H., Miller, D. L., &amp; Gray, M. J. (2021).
+Emerging Pathogens and a Current-Use Pesticide: Potential Impacts on
+Eastern Hellbenders. Journal of Aquatic Animal Health. DOI:
+10.1002/aah.10117</li>
+<li>Carter, E. D., Bletz, M. C., Le Sage, M., LaBumbard, B.,
+Rollins-Smith, L. A., Woodhams, D. C., Miller, D. L., &amp; Gray, M. J.
+(2021). Winter is coming–Temperature affects immune defenses and
+susceptibility to Batrachochytrium salamandrivorans. Plos Pathogens.
+DOI: 10.1371/journal.ppat.1009234.</li>
+<li>Tompros, A., Dean, A. D., Fenton, A., Wilber, M. Q., Carter, E. D.,
+&amp; Gray, M. J. (2021). Frequency-dependent transmission of
+Batrachochytrium salamandrivorans in eastern newts. Transboundary and
+Emerging Diseases. DOI: 10.1111/tbed.14043.</li>
+<li>Robinson, K. A., Pereira, K. E., Bletz, M. C., Carter, E. D., Gray,
+M. J., Piovia-Scott, J., Romansic, J. M., Woodhams, D. C., &amp;
+Fritz-Laylin, L. (2020). Isolation and maintenance of Batrachochytrium
+salamandrivorans cultures. Diseases of Aquatic Organisms. DOI:
+10.3354/dao03488.</li>
+<li>Malagon, D. A., Melara, L. A., Prosper, O. F., Lenhart, S., Carter,
+E. D., Fordyce, J. A., Peterson, A. C., Miller, D. L., &amp; Gray, M. J.
+(2020). Host density and habitat structure influence host contact rates
+and Batrachochytrium salamandrivorans transmission. Scientific Reports.
+DOI: 10.1038/s41598-020-62351-x.</li>
+<li>Kumar, R., Malagon, D. A., Carter, E. D., Miller, D. L., Bohanon, M.
+L., Cusaac, J. P. W., Peterson, A. C., &amp; Gray, M. J. (2020).
+Experimental methodologies can affect pathogenicity of Batrachochytrium
+salamandrivorans infections. Plos One. DOI:
+10.1371/journal.pone.0235370</li>
+<li>Carter, E. D., Miller, D. L., Peterson, A. C., Sutton, W. B.,
+Cusaac, J. P. W., Spatz, J. A., Rollins-Smith, L., Reinert, L., Bohanon,
+M., Williams, L. A., Upchurch, A., &amp; Gray, M. J. (2019).
+Conservation risk of Batrachochytrium salamandrivorans to endemic
+lungless salamanders. Conservation Letters. DOI:
+10.1111/conl.12675.</li>
+<li>Ossiboff, R. J., Towe, A. E., Brown, M. A., Longo, A. V., Lips, K.
+R., Miller, D. L., Carter, E. D., Gray, M. J., &amp; Frasca, S. (2019).
+Differentiating Batrachochytrium dendrobatidis and B. salamandrivorans
+in Amphibian Chytridiomycosis Using RNAScope®in situ Hybridization.
+Frontiers in Veterinary Science. DOI: 10.3389/fvets.2019.00304.</li>
+<li>Peace, A., O’Regan, S. M., Spatz, J. A., Reilly, P. N., Hill, R. D.,
+Carter, E. D., Wilkes, R. P., Waltzek, T. B., Miller, D. L., &amp; Gray,
+M. J. (2019). A highly invasive chimeric ranavirus can decimate tadpole
+populations rapidly through multiple transmission pathways. Ecological
+Modelling. DOI: 10.1016/j.ecolmodel.2019.108777Get.</li>
+<li>Casais, R., Larrinaga, A. R., Dalton, K. P., Domínguez Lapido, P.,
+Márquez, I., Bécares, E., Carter, E. D., Gray, M. J., Miller, D. L.,
+&amp; Balseiro, A. (2019). Water sports could contribute to the
+translocation of ranaviruses. Scientific Reports. DOI:
+10.1038/s41598-019-39674-5.</li>
+<li>Goodman, R. M., Hargadon, K. M., &amp; Carter, E.D. (2018).
+Detection of Ranavirus in Eastern Fence Lizards and Eastern Box Turtles
+in Central Virginia. Northeastern Naturalist, 25, 391 - 398. DOI:
+10.1656/045.025.0306.</li>
+<li>Gray, M. J., Spatz, J. A., Carter, E. D., Yarber, C. M., Wilkes, R.
+P., &amp; Miller, D. L. (2018). Poor biosecurity could lead to disease
+outbreaks in animal populations. Plos One. DOI:
+10.1371/journal.pone.0193243.</li>
+<li>Goodman, R. M., &amp; Carter, E. D. (2017). Survey of Herpetofauna
+on the Campus of Hampden-Sydney College in Prince Edward County,
+Virginia. Journal of the Virginia Herpetological Society.</li>
+<li>Carter, E. D., &amp; Goodman, R. M. (2013). County Record: Storeria
+dekayi (Northern Brown Snake) Prince Edward County Va [County Record].
+Catesbeiana.</li>
 </ol>
 <p><strong>IN REVIEW:</strong></p>
 <ol style="list-style-type: decimal">
-<li>Cusaac JPW, <strong>Carter ED</strong>, Woodhams DC, Robert J, Spatz JA, Howard JL, Lillard C, Graham AW, Hill RD, Reinsch S, McGinnity D, Reeves B, Bemis D, Wilkes RP, Hopkins WB, Waltzek TB, Miller DL, Gray MJ. Interactive Effects of Herbicide and Emerging Amphibian Pathogens in Eastern Hellbender. EcoHealth.</li>
+<li>Cusaac JPW, <strong>Carter ED</strong>, Woodhams DC, Robert J, Spatz
+JA, Howard JL, Lillard C, Graham AW, Hill RD, Reinsch S, McGinnity D,
+Reeves B, Bemis D, Wilkes RP, Hopkins WB, Waltzek TB, Miller DL, Gray
+MJ. Interactive Effects of Herbicide and Emerging Amphibian Pathogens in
+Eastern Hellbender. EcoHealth.</li>
 </ol>
-<p><strong>IN PREPARATION:</strong> 1. Drought and ranavirus interact to negatively impact wood frogs in the Great Smoky Mountains National Park. Target Journal = Copeia.</p>
+<p><strong>IN PREPARATION:</strong> 1. Drought and ranavirus interact to
+negatively impact wood frogs in the Great Smoky Mountains National Park.
+Target Journal = Copeia.</p>
 <ol start="2" style="list-style-type: decimal">
-<li><p>Tolerance of North American Amphibian Species to Batrachochytrium salamandrivorans infections. Target journal = Proceedings of the National Academy of Sciences (USA).</p></li>
-<li><p>Estimating Batrachochytrium salamandrivorans zoospore viability using flow cytometry. Target Journal = Diseases of Aquatic Organisms.</p></li>
+<li><p>Tolerance of North American Amphibian Species to Batrachochytrium
+salamandrivorans infections. Target journal = Proceedings of the
+National Academy of Sciences (USA).</p></li>
+<li><p>Estimating Batrachochytrium salamandrivorans zoospore viability
+using flow cytometry. Target Journal = Diseases of Aquatic
+Organisms.</p></li>
 </ol>
-</div>
-<div id="presentations" class="section level2">
-<h2><strong>Presentations</strong></h2>
+<p>##<strong>Presentations</strong></p>
 <p><strong>Lead Presenter:</strong></p>
 <ol style="list-style-type: decimal">
-<li><strong>Carter ED</strong>, Gray MJ, Spatz JA, Miller DL. 2018. Interaction of hydroperiod and ranavirus leading to possible amphibian population declines in Great Smoky Mountains National Park. Southeast Partners in Amphibian and Reptile Conservation Helen, GA. (Oral Presentation).</li>
-<li><strong>Carter ED</strong>, Gray MJ, Spatz JA, Miller DL. 2017. Interaction of hydroperiod and ranavirus leading to possible amphibian population declines in Great Smoky Mountains National Park. Southeastern Association of Fish and Wildlife Agencies Louisville, KY (Oral Presentation).</li>
-<li><strong>Carter ED</strong>. 2017. Conservation risk of Batrachochytrium salamandrivorans to endemic brook salamanders. Northeast Partners in Amphibian and Reptile Conservation, Pembroke, VA (Poster).</li>
-<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL, Interaction of hydroperiod and ranavirus leading to possible amphibian population declines in Great Smoky Mountains National Park. Northeast Partners in Amphibian and Reptile Conservation, Pembroke, VA (Poster).</li>
-<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL, Interaction of hydroperiod and ranavirus leading to possible amphibian population declines in Great Smoky Mountains National Park. International Ranavirus Symposium, Budapest, Hungary (Oral Presentation).</li>
-<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL, Population Dynamics and Pathogen Prevalence in an Amphibian Breeding Pond in Cades Cove. Great Smoky Mountains National Park Research Colloquium, Gatlinburg, TN (Oral Presentation).</li>
-<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL, Poor biosecurity could lead to disease outbreaks in amphibian populations. Southeast Partners in Amphibian and Reptile Conservation, Little Rock, Arkansas (Poster).</li>
-<li><strong>Carter ED</strong>. 2017, Amphibian Disease Overview. University of Tennessee-Knoxville Student Chapter of the WDA, Knoxville, Tennessee (Oral Presentation)</li>
-<li><strong>Carter ED</strong>, Gray MJ, Miller DL. 2016. Identifying factors responsible for ranaviral disease outbreaks in Great Smoky Mountains National Park. FWF Graduate Seminar University of Tennessee, Knoxville, TN (Oral Presentation).</li>
-<li><strong>Carter ED</strong>, Gray MJ, Miller DL, Spatz JA, Howard J. 2016. Pathogens vs. pesticides: The threat to eastern hellbenders. Tennessee Wildlife Society, Burns, TN (Oral Presentation).</li>
-<li><strong>Carter ED</strong>, Gray MJ, Miller DL, Spatz JA. 2015. Rapid Transmission of Ranavirus: Role of Direct Contact. Tennessee Herpetology Society, Savannah, TN (Oral Presentation).</li>
-<li><strong>Carter ED</strong>, Goodman RM. 2014. Survey of ranavirus in central Virginia reptiles. Association of Southeastern Biologists, Chattanooga, TN (Poster).</li>
-<li><strong>Carter ED</strong>, Goodman RM. 2014. Survey of ranavirus in central Virginia reptiles. Sigma Xi Research Symposium, Longwood University, VA (Poster).</li>
-<li><strong>Carter ED</strong>, Goodman RM, Hargadon KM. 2014. Survey of ranavirus in central Virginia reptiles. Ecological Society of America annual meeting, Sacramento, CA (Poster).</li>
-<li><strong>Carter ED</strong>, Goodman RM. 2013. Survey of Herpetofauna and Ranavirus on Hampden-Sydney College campus. Sigma Xi Research Symposium, Hampden-Sydney College, VA (Poster).</li>
-<li><strong>Carter ED</strong>, Goodman RM. 2013. Survey of Herpetofauna and Ranavirus on Hampden-Sydney College campus. Sigma Xi Student Research Conference, Research Triangle, NC (Poster).</li>
-<li><strong>Carter ED</strong>, Goodman RM. 2013. Survey of Herpetofauna and Ranavirus on Hampden-Sydney College campus. Virginia Herpetological Society annual meeting, Richmond, VA (Poster).</li>
+<li><strong>Carter ED</strong>, Gray MJ, Spatz JA, Miller DL. 2018.
+Interaction of hydroperiod and ranavirus leading to possible amphibian
+population declines in Great Smoky Mountains National Park. Southeast
+Partners in Amphibian and Reptile Conservation Helen, GA. (Oral
+Presentation).</li>
+<li><strong>Carter ED</strong>, Gray MJ, Spatz JA, Miller DL. 2017.
+Interaction of hydroperiod and ranavirus leading to possible amphibian
+population declines in Great Smoky Mountains National Park. Southeastern
+Association of Fish and Wildlife Agencies Louisville, KY (Oral
+Presentation).</li>
+<li><strong>Carter ED</strong>. 2017. Conservation risk of
+Batrachochytrium salamandrivorans to endemic brook salamanders.
+Northeast Partners in Amphibian and Reptile Conservation, Pembroke, VA
+(Poster).</li>
+<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL,
+Interaction of hydroperiod and ranavirus leading to possible amphibian
+population declines in Great Smoky Mountains National Park. Northeast
+Partners in Amphibian and Reptile Conservation, Pembroke, VA
+(Poster).</li>
+<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL,
+Interaction of hydroperiod and ranavirus leading to possible amphibian
+population declines in Great Smoky Mountains National Park.
+International Ranavirus Symposium, Budapest, Hungary (Oral
+Presentation).</li>
+<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL,
+Population Dynamics and Pathogen Prevalence in an Amphibian Breeding
+Pond in Cades Cove. Great Smoky Mountains National Park Research
+Colloquium, Gatlinburg, TN (Oral Presentation).</li>
+<li><strong>Carter ED</strong>. 2017. Gray MJ, Spatz JA, Miller DL, Poor
+biosecurity could lead to disease outbreaks in amphibian populations.
+Southeast Partners in Amphibian and Reptile Conservation, Little Rock,
+Arkansas (Poster).</li>
+<li><strong>Carter ED</strong>. 2017, Amphibian Disease Overview.
+University of Tennessee-Knoxville Student Chapter of the WDA, Knoxville,
+Tennessee (Oral Presentation)</li>
+<li><strong>Carter ED</strong>, Gray MJ, Miller DL. 2016. Identifying
+factors responsible for ranaviral disease outbreaks in Great Smoky
+Mountains National Park. FWF Graduate Seminar University of Tennessee,
+Knoxville, TN (Oral Presentation).</li>
+<li><strong>Carter ED</strong>, Gray MJ, Miller DL, Spatz JA, Howard J.
+2016. Pathogens vs. pesticides: The threat to eastern hellbenders.
+Tennessee Wildlife Society, Burns, TN (Oral Presentation).</li>
+<li><strong>Carter ED</strong>, Gray MJ, Miller DL, Spatz JA. 2015.
+Rapid Transmission of Ranavirus: Role of Direct Contact. Tennessee
+Herpetology Society, Savannah, TN (Oral Presentation).</li>
+<li><strong>Carter ED</strong>, Goodman RM. 2014. Survey of ranavirus in
+central Virginia reptiles. Association of Southeastern Biologists,
+Chattanooga, TN (Poster).</li>
+<li><strong>Carter ED</strong>, Goodman RM. 2014. Survey of ranavirus in
+central Virginia reptiles. Sigma Xi Research Symposium, Longwood
+University, VA (Poster).</li>
+<li><strong>Carter ED</strong>, Goodman RM, Hargadon KM. 2014. Survey of
+ranavirus in central Virginia reptiles. Ecological Society of America
+annual meeting, Sacramento, CA (Poster).</li>
+<li><strong>Carter ED</strong>, Goodman RM. 2013. Survey of Herpetofauna
+and Ranavirus on Hampden-Sydney College campus. Sigma Xi Research
+Symposium, Hampden-Sydney College, VA (Poster).</li>
+<li><strong>Carter ED</strong>, Goodman RM. 2013. Survey of Herpetofauna
+and Ranavirus on Hampden-Sydney College campus. Sigma Xi Student
+Research Conference, Research Triangle, NC (Poster).</li>
+<li><strong>Carter ED</strong>, Goodman RM. 2013. Survey of Herpetofauna
+and Ranavirus on Hampden-Sydney College campus. Virginia Herpetological
+Society annual meeting, Richmond, VA (Poster).</li>
 </ol>
 </div>
 
@@ -429,7 +516,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -447,7 +534,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
