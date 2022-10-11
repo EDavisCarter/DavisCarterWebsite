@@ -12,13 +12,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ***
 
-#By Phone
+# Phone
 
 704-819-0708
 
 ***
 
-#By Email
+#  Email
 
 **Work Email:** ecarte27@utk.edu
 
