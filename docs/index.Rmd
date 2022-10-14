@@ -4,6 +4,7 @@ title: "**WELCOME**"
 output: 
   html_document:
     includes:
+    header:
        in_header: GoogleAnalytics.Rhtml
 ---
 
