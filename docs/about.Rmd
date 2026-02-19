@@ -9,7 +9,7 @@ output:
 ## <!-- blank line -->
 
 -   Name: **Davis Carter**\
--   Current Position: Assistant Professor of Biology, Queens University of Charlotte\
+-   Current Position: Assistant Professor of Biology, [Queens University of Charlotte](https://www.queens.edu)\
 -   Research Interest: Amphibian Disease Ecology
 
 ### **Education** \ 
@@ -17,13 +17,13 @@ output:
 **MS Wildlife and Fisheries Science, University of Tennessee, Knoxville 2018**\
 **BS Biology, Hampden-Sydney College 2015**
 
-![Hampden-Sydney College](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/H-SC.png) ![Forestry Wildlife and Fisheries](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/FWFlogo.png)
+![Hampden-Sydney College](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/H-SC.png){width=150px} ![Forestry Wildlife and Fisheries](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/FWFlogo.png){width=150px}
 
 ### **Early Life**
 
 Growing up in Charlotte, North Carolina, I observed firsthand the rapid pace at which development reshaped local landscapes. Woodlots and streams that once supported abundant wildlife were replaced by shopping centers and parking lots, and creeks I explored as a child gradually declined in ecological health. Witnessing those changes instilled in me a lasting commitment to conserving wildlife and protecting the habitats upon which they depend.
 
-![**Charlotte**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Charlotte.jpg)
+![**Charlotte**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Charlotte.jpg){width=400px}
 
 ## **Research Interests**
 
@@ -32,3 +32,5 @@ As an undergraduate, I was fortunate to work with Dr. Rachel M. Goodman at Hampd
 I began to see that the same environmental changes that often exacerbate disease emergence could, if thoughtfully applied, be harnessed as tools for intervention. This perspective reframed conservation challenges for me—not simply as problems to document, but as systems to understand deeply enough to influence. Yet I also came to appreciate that meaningful intervention cannot occur without first unraveling the underlying disease dynamics and epidemiology. Only by understanding how pathogens spread, persist, and interact with their hosts can we design strategies that are both effective and ecologically responsible.
 
 Building on this foundation, my research now centers on unraveling host–pathogen–environment interactions to inform management strategies aimed at reducing the burden of infectious disease in wildlife populations.  
+
+I've been very fortunate along my research journey to be supported by wonderful mentors such as Dr. Matthew J. Gray, Dr. Debra L. Miller, and Dr. Mark Q. Wilber, who formed of the [Amphibian Disease Lab](https://amphibiandisease.tennessee.edu/) at the University of Tennesse.  

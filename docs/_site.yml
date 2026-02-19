@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "E. Davis Carter"
   left:
-    - text: "Welcome Tab"
+    - text: "Home"
       href: index.html
       icon: fas fa-home
     - text: "About Me"

@@ -8,8 +8,10 @@ output:
        in_header: GoogleAnalytics.Rhtml
 ---
 
+### **My name is Davis Carter. I am an Assistant Professor of Biology at Queens University in Charlotte, NC. My research  focuses on understanding host-pathogen-environment interactions to better manage wildlife disease.** 
+![](images/headshot.jpg){width=250px style="border-radius: 50%; float: right; margin-left: 20px;"}
 
-### Thank you for your interest. I welcome inquiries and can be reached via the Contact page.
+### Thank you for your interest! I welcome inquiries and can be reached via the contact page.
 
 
 ![**Charlies Bunion, GSMNP**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Profpic1.jpg)
