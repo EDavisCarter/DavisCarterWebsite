@@ -123,10 +123,13 @@ CDA 340 – Analytical Models
 QLC 140 – Sustainability    
 
 **Salisbury University (2023–2024)**  
-BIO 101 – Intro to Biology · BIO 310 – Ecology Lab · HONR 111 – Critical Thinking and Writing  
+BIO 101 – Intro to Biology 
+BIO 310 – Ecology Lab 
+HONR 111 – Critical Thinking and Writing  
 
 **University of Tennessee (2016–2023)**  
-WFS 100 – Intro to Wildlife Science · WFS 101 – Wildlife Health  
+WFS 100 – Intro to Wildlife Science 
+WFS 101 – Wildlife Health  
 WFS 433/533 – Amphibian Ecology and Conservation  
 
 ---
@@ -151,6 +154,7 @@ if (knitr::is_html_output()) {
 
 ## **Select Presentations and Invited Lectures**
 
+- *Ranavirosis and Chytridiomycosis* — University of Wyoming, Feb 2026 (**Invited**)
 - *Amphibian Chytridiomycosis* — Salisbury University, Nov 2023 (**Invited**)  
 - *Wildlife Disease Ecology: Untangling the Disease Triangle* — EKU, Apr 2023 (**Invited**)  
 - *Bsal Transmission Probability Through Infection Progression* — GARD Conference, 2022  
