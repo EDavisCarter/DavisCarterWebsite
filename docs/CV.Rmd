@@ -1,536 +1,212 @@
 ---
-title: "**CV**"
-output: 
-html_document:
-    includes:
-       in_header: GoogleAnalytics.Rhtml
-editor_options: 
-  markdown: 
-    wrap: 72
+title: "Curriculum Vitae"
+output:
+  html_document:
+    theme: yeti
+    css: style.css
+  pdf_document:
+    toc: true
+    number_sections: false
+header-includes:
+  - \usepackage[hyphens]{url}
+  - \usepackage{enumitem}
+  - \setlist[itemize]{leftmargin=1.5em}
+  - \emergencystretch=1em
+  - \sloppy
+  - \tolerance=1000
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+# **Edward Davis Carter**
+
+**Phone:** (704) 819‑0708  
+**Work Email:** [cartere2@queens.edu](mailto:cartere2@queens.edu)  
+**Mailing Address:** 3346 Eastwood Drive, Charlotte, NC 28205  
+
+---
+
+## **Education**
+
+**Ph.D.** *The University of Tennessee-Knoxville*, August 2022  
+Major: Natural Resources (Wildlife Health Concentration)  
+> Dissertation: "Role of temperature, transmission pathways, and pathogen load in *Batrachochytrium salamandrivorans* epidemiology"  
+Committee: Matthew J. Gray, Debra L. Miller, Mark Q. Wilber, James Fordyce  
+
+**M.S.** *The University of Tennessee-Knoxville*, July 2018  
+Major: Wildlife and Fisheries Science (Wildlife Health Concentration)  
+> Thesis: "Implications of Drought and Ranavirus on an Amphibian Community in the Great Smoky Mountains National Park"  
+Advisor: Matthew J. Gray  
+
+**B.S.** *Hampden-Sydney College, Biology*, May 2015  
+Summa Cum Laude — Minor: German  
+
+---
+
+## **Honors and Awards**
+
+- Carolina Wildlands Foundation Research Grant — \$3,500 (2025)  
+- SEC Postdoctoral Emerging Scholar Recipient — \$65,000 (2022–2023)  
+- Tennessee Fellowship for Graduate Student Excellence — \$108,000 (2018–2022)  
+- Gamma Sigma Delta PhD Candidate Research Award (2022)  
+- Graduate Student Senate Excellence in Teaching Award (2022)  
+- Graduate Student Senate Excellence in Research Award (2022)  
+- Dr. Frank‑Maschmann Outstanding Publication Award — \$1,100 (2021)  
+- Global Catalyst Student International Travel Grant — \$1,500 (2020)  
+- Graduate Student Senate Travel Award — \$1,390 (2017, 2019)  
+- Graduate Student Senate Excellence in Research Award (2018)  
+- Gamma Sigma Delta Graduate Student Research Award (2018)  
+- International Symposium of Ranaviruses Travel Award — \$1,000 (2017)  
+- R.T. Hewitt Biology Award (2015)  
+- Phi Beta Kappa, Sigma Xi, Omicron Delta Kappa, Summa Cum Laude (2015)
+
+---
+
+## **Current Position**
+
+**Visiting Assistant Professor of Biology**  
+*Queens University, Charlotte, NC* (August 2024 – Present)
+
+---
+
+## **Past Professional Appointments**
+
+- **Postdoctoral Teaching and Mentoring Fellow**, *Salisbury University, MD* (Aug 2023 – Jul 2024)  
+- **SEC Postdoctoral Teaching Fellow**, *University of Tennessee, Knoxville, TN* (Aug 2022 – Jul 2023)
+
+---
+
+## **Research Experience**
+
+### Postdoctoral Fellow  
+*University of Tennessee Center for Wildlife Health* (Aug 2022 – Aug 2023)  
+Supervisor: Matthew J. Gray  
+- Supported by \$2.75M NSF EEID grant (#2207922).  
+- Designed laboratory experiments on plant‑derived fungicides for *Batrachochytrium salamandrivorans* (Bsal).  
+- Evaluated toxicity of plant fungicides on *Notophthalmus viridescens*.  
+- Performed diagnostic testing of amphibian pathogens in the U.S. pet trade.  
+- Collected microbiome samples to assess population‑level microbial variation.  
+
+### Ph.D. Candidate  
+*University of Tennessee Center for Wildlife Health* (2018 – 2022)  
+Advisors: Matthew J. Gray & Debra L. Miller  
+- Supported by \$2.5M NSF EEID grant (#1814520).  
+- Conducted lab challenges on temperature‑dependent *Bsal* susceptibility.  
+- Generated *Bsal* habitat suitability and risk maps using ArcGIS.  
+- Evaluated transmission probability and life‑stage susceptibility.  
+- Conducted multi‑stressor experiments with pathogens, herbicides, and sediment.  
+
+### M.S. Research  
+*University of Tennessee Center for Wildlife Health* (2016 – 2018)  
+Advisor: Matthew J. Gray  
+- Evaluated effects of ranavirus mortality events on amphibian populations.  
+- Coordinated field studies within Great Smoky Mountains National Park.  
+
+### Research Technician  
+*University of Tennessee Institute of Agriculture* (2015 – 2016)  
+- Performed ranavirus and *Bd* susceptibility challenge experiments.  
+- Investigated biosecurity impacts on field disease outbreaks.  
+
+---
+
+## **Teaching Experience**
+
+*(Abbreviated – see full CV for detailed course list)*  
+
+**Queens University of Charlotte (2024–Present)**  
+BIO 120 – Microbiology for Health Professions  
+BIO 345 – Conservation Biology   
+BIO 202 – Foundations of Ecology and Evolution  
+BIO 230 – Intro to GIS   
+BIO 314 – Topics in Conservation: Wildlife Health    
+BIO 300 – Writing for Biologists   
+CDA 340 – Analytical Models  
+QLC 140 – Sustainability    
+
+**Salisbury University (2023–2024)**  
+BIO 101 – Intro to Biology · BIO 310 – Ecology Lab · HONR 111 – Critical Thinking and Writing  
+
+**University of Tennessee (2016–2023)**  
+WFS 100 – Intro to Wildlife Science · WFS 101 – Wildlife Health  
+WFS 433/533 – Amphibian Ecology and Conservation  
+
+---
+
+## **Student Mentorship**
+
+- **Rogers Summer Research Mentor**, Queens University (2024–Present)  
+- Mentored 11 undergraduates in amphibian disease laboratory work.  
+- Guided independent and high school research on salamander conservation.  
+
+---
+
+## **Publications**
+```{r, echo=FALSE, results='asis'}
+if (knitr::is_html_output()) {
+  cat(readLines("pubs/pubs_selected.md"), sep = "\n")
+} else {
+  cat(readLines("pubs/pubs_full.md"), sep = "\n")
+}
 ```
 
-## **EDUCATION**
 
-**PhD The University of Tennessee-Knoxville**
+## **Select Presentations and Invited Lectures**
 
-Major = Natural Resources (Wildlife Health Concentration) August 2022
+- *Amphibian Chytridiomycosis* — Salisbury University, Nov 2023 (**Invited**)  
+- *Wildlife Disease Ecology: Untangling the Disease Triangle* — EKU, Apr 2023 (**Invited**)  
+- *Bsal Transmission Probability Through Infection Progression* — GARD Conference, 2022  
+- *Temperature‑Dependent Pathogenicity of Bsal* — Zoological Society of London Symposium, 2019  
 
-Dissertation: "Role of temperature, transmission pathways, and pathogen
-load in Batrachochytrium salamandrivorans epidemiology"
+---
 
-Committee: Matthew J. Gray, Debra L. Miller, Mark Q. Wilber, James
-Fordyce
+## **Professional Training**
 
-**MS The University of Tennessee-Knoxville**
+- Course ReDesign Workshop — Queens University (2024)  
+- CIRTL‑FUEL Teaching Seminar — University of Tennessee (2021)  
+- Inclusive Teaching & Assessment Modules — UTK Learning Center (2019‑2021)  
+- Conservation Medicine One Health Workshop — University of Georgia (2018)  
+- Scientific Computing for Biology Workshop — UTK (2018)  
 
-Major = Wildlife and Fisheries Science (Wildlife Health Conc.) July 2018
+---
 
-Thesis: "Implications of Drought and Ranavirus on an Amphibian Community
-in the Great Smoky Mountains National Park"
+## **Professional Affiliations**
 
-Advisor: Matthew J. Gray
+- Wildlife Disease Association  
+- Partners in Amphibian and Reptile Conservation  
+- Ecological Society of America  
+- The Wildlife Society  
+- Gamma Sigma Delta · Sigma Xi  
 
-**BS Hampden-Sydney College, Biology May 2015**
+---
 
-Summa Cum Laude
+## **Professional Service**
 
-Minored in German
+- **Queens University** — Campus Connect (2025–Present); Sustainability Committee Member; Sustainability Club Advisor  
+- **Salisbury University** — Biological Sciences Committees; Student Research Conference Member; Centennial Steering Committee  
+- **UTK Graduate Student Senate** — Treasurer & Fundraising Chair (2021–2022)  
+- **Global Amphibian & Reptile Disease Conference** — Student Chair & Field Trip Organizer (2021–2022)  
+- Reviewer for *PeerJ, EcoHealth, Journal of Wildlife Diseases, Scientific Reports*  
 
-### **HONORS AND AWARDS**
+---
 
-SEC Post-doctoral Emerging Scholar Recipient 2022-Present
+## **Languages**
+- **English:** Native  
+- **German:** Intermediate Listening, Speaking, Reading, Writing  
 
-Tennessee Fellowship for Graduate Student Excellence, \hfill [$108,000
-2018-2022]{style="float:right"} 
+---
 
-Gamma Sigma Delta PhD Candidate Research Award 2022
+## **Computer Skills**
+- **Programming:** R  
+- **Applications:** ArcGIS, ImageJ, Photoshop, JMP  
 
-Graduate Student Senate Excellence in Teaching Award 2022
+---
 
-Graduate Student Senate Excellence in Research Award 2022
+## **References**
 
-Dr. Frank-Maschmann Outstanding Publication Award, \$1,100 2021
+**Dr. Matthew J. Gray** — Professor, Univ. of Tennessee  
+Phone: (865) 385‑0772 · Email: [mgray11@utk.edu](mailto:mgray11@utk.edu)  
 
-Global Catalyst Student International Travel Grant \$1,500 2020
+**Dr. Debra L. Miller** — Professor, UT College of Veterinary Medicine  
+Phone: (865) 806‑7598 · Email: [dmille42@utk.edu](mailto:dmille42@utk.edu)  
 
-Graduate Student Senate Travel Award, \$1,390 2017, 2019
-
-Graduate Student Senate Excellence in Research Award 2018\
-Gamma Sigma Delta Graduate Student Research Award 2018
-
-International Symposium of Ranaviruses Travel Award. \$1,000 2017
-
-R.T. Hewitt Biology Award, Hampden-Sydney College 2015
-
-Phi Beta Kappa 2015
-
-Sigma Xi 2015
-
-Omicron Delta Kappa 2015
-
-Summa Cum Laude, Hampden-Sydney College 2015
-
-Madison Scholarship Recipient, Hampden-Sydney College 2013-2015
-
-Hampden-Sydney College Varsity Soccer Captain 2014
-
-VA SID Academic All-State Team 2014-2015
-
-VA SID Soccer All-State Team 2014
-
-### **RESEARCH EXPERIENCE**
-
-**University of Tennessee Center for Wildlife Health, Knoxville, TN August
-2022-Present Postdoctoral Fellow Supervisor: Matthew J. Gray 
-Supported by \$2.75M grant (#2207922) awarded by the National Science Foundation Ecology and Evolution of Infectious Diseases Program**  
--   Designed laboratory experiments to evaluate the effectiveness of plant-derived
-fungicides as a treatment for Batrachochytrium salamandrivorans
-infections  
--   Evaluated the toxicity of plant-derived fungicides on an amphibian host species (Notophthalmus viridescens). • Performed
-diagnostic testing of amphibian pathogens collected through a U.S. trade
-network of pet amphibian businesses   
--   Collected microbiome samples from wild amphibians to evaluate differences in microbial communities that result from variation in population densities  
-
-**University of Tennessee Center for Wildlife Health, Knoxville, TN
-2018-2022 Ph.D. Candidate Advisors: Matthew J. Gray and Debra L. Miller
-Supported by \$2.5M grant (#1814520) awarded by National Science
-Foundation, Ecology and Evolution of Infectious Diseases Program**  
--   Performed laboratory challenge experiments that evaluated how
-environmental temperature influences Batrachochytrium salamandrivorans
-(Bsal) chytridiomycosis disease progression and host susceptibility.  
--   Updated Bsal habitat suitability maps for North America based on
-temperature dependent susceptibility of a model host species  
--   Measured
-how Bsal susceptibility differs among amphibian host life-stages  
--   Determined how probability of Bsal transmission relates to infection
-latency and host infection load  
--   Performed a transmission experiment
-that measured the impacts infected carcasses could have on disease
-outbreaks  
--   Evaluated the effectiveness of fungal zoospore removal by
-zooplankton species  
--   Used estimates of species susceptibility and
-species distribution data in ArcGIS to create risk maps for Bsal
-emergence across the United States   
--   Performed challenge experiments to
-determine the pathogenesis of Bsal chytridiomycosis  
--   Performed an
-experiment evaluating the effects of multiple stressors (sediment,
-herbicide, pathogens) on larval hellbenders (Cryptobranchus
-alleganiensis).  
--   Evaluated the efficacy of plant-derived fungicides on Bsal zoospores  
--   Developed methods for determining zoospore cell viability using
-flowcytometry  
-
-**University of Tennessee Center for Wildlife Health, Knoxville, TN
-2016-2018 MS Research Advisor: Matthew J. Gray**  
--   Evaluated the effects
-of reoccurring ranavirus mortality events on amphibian populations
-within Great Smoky Mountains National Park.  
--   Measured ranavirus
-infection prevalence in post-metamorphic and larval amphibian
-communities from two ephemeral wetlands.  
--   Assessed wetland visitation
-by humans and wildlife using camera traps.  
--   Coordinated research
-activities with Great Smoky Mountains National Park staff and
-undergraduate volunteers.
-
-**University of Tennessee Institute of Agriculture, Knoxville, TN
-2015-2016 Research Technician Lab: University of Tennessee, Center for
-Wildlife Health**
--   Performed Ranavirus and Batrachochytrium dendrobatidis
-susceptibility challenge experiments on several amphibian species.  
--   Cultured and tittered Ranavirus isolates for challenge experiments.  
--   Evaluated how poor biosecurity while conducting field-based research
-could contribute to amphibian disease outbreaks.  
--   Measured how commonly
-utilized herbicides impact eastern hellbender susceptibility to
-Ranavirus and Batrachochytrium dendrobatidis infections.
-
-Hampden-Sydney College, Hampden-Sydney, VA 2013-2015 Undergraduate
-Honors Research • Conducted a Ranavirus challenge experiment which
-evaluated the impacts of commonly used herbicides on the susceptibility
-of Red-eared slider turtles. • Constructed four artificial cover-object
-transects for herpetofaunal sampling. • Measured the prevalence of
-ranavirus infection in squamate populations by conducting weekly
-sampling of four artificial cover object transects. • Utilized hand
-capture techniques to capture squamates and chelonians. • Tested tissue
-samples for Ranavirus DNA using quantitative polymerase chain reaction
-(qPCR).
-
-### *TEACHING EXPERIENCE*
-
-University of Tennessee Institute of Agriculture, Expected Spring 2022
-Department of Forestry, Wildlife and Fisheries Instructor Introduction
-to Lab Techniques for Wildlife and Fisheries Science • Developed a
-course syllabus and curriculum that provided experiential learning
-opportunities for students interested in developing laboratory skills
-necessary to process commonly collected field research samples. •
-Designed several experiential learning activities through which students
-implemented techniques taught in class. • Evaluated student
-comprehension of lab methods by having students write a mock methods
-section for a proposed research project.
-
-University of Tennessee Institute of Agriculture, Fall 2022 Department
-of Forestry, Wildlife and Fisheries Instructor (79 students)
-Introduction to Wildlife and Fisheries Science (WFS 100) • Taught
-incoming students learning methods that would prepare them for careers
-as Wildlife and Fisheries Professionals. • Organized a series of guest
-lectures that included faculty of the University of Tennessee, Tennessee
-Wildlife Resource Agency, US Department of Agriculture APHIS and
-Tennessee State Park personnel. • Regularly and effectively communicated
-class expectations to students. • Provided feedback to student
-assignments.
-
-University of Tennessee Institute of Agriculture, Fall 2022 Department
-of Forestry, Wildlife and Fisheries Instructor (25 students) Current
-Topics in Wildlife Health (WFS 101) • Organized lectures from wildlife
-health professionals for Wildlife and Fisheries students concentrating
-in Wildlife Health • Introduced students to the One Health Concept by
-exploring zoonotic pathogens and their origins. • Developed a Wildlife
-Health research assignment and graded written and oral presentations. •
-Provided a lecture on fungal pathogens that impact wildlife populations
-in terrestrial in marine environments.
-
-University of Tennessee Institute of Agriculture, Fall 2022 Department
-of Forestry, Wildlife and Fisheries Co-Instructor Forestry Wildlife and
-Fisheries Graduate Student Seminar (FORS 512, WFS 512, FWF 612) •
-Provided instruction on how to construct and give oral presentations on
-proposed research and contemporary topics. • Assessed student
-presentations given during seminar.
-
-University of Tennessee Institute of Agriculture, Spring 2019-2022
-Department of Forestry, Wildlife and Fisheries Co-Instructor Amphibian
-Ecology and Conservation (WFS 433/533) • Developed weekly quizzes, exams
-and lectures. • Adapted to online instruction during in-person class
-restrictions associated with COVID. • Created several lectures on
-amphibian identification, biodiversity, anatomy, physiology,
-reproductive strategies, and community interactions. • Organized field
-trip events to perform amphibian disease sampling and population
-monitoring in Great Smoky Mountains National Park and Seven Islands
-State Birding Park.
-
-University of Tennessee Institute of Agriculture, Fall 2019-2021
-Department of Forestry, Wildlife and Fisheries Co-Instructor
-Introduction to Wildlife Health (WFS 101) • Helped organize a series of
-lectures provided by faculty, graduate student and government agency
-personnel which introduced wildlife health concepts to a diverse
-undergraduate class. • Developed a career search exercise where students
-were asked to search for job listings which interested them, contemplate
-skills needed to make them a competitive candidate and then draft cover
-letters. • Created a lecture discussing several major fungal pathogens
-and concepts of disease ecology.
-
-University of Tennessee Institute of Agriculture, Fall 2016-2018
-Department of Forestry, Wildlife and Fisheries Teaching Assistant •
-Assisted with exam and classwork associated with several Forestry,
-Wildlife and Fisheries classes including: Conservation, Dendrology,
-Wildlife Habitat Evaluation, Wetland Ecology and Management.
-
-Hampden-Sydney College, Spring 2015 Department of Biology Undergraduate
-Teaching Assistant • Demonstrated commonly used laboratory techniques
-for introductory biology lab students.
-
-STUDENT MENTORSHIP Amphibian Disease Laboratory Mentor • Taught basic
-and advanced laboratory skills to 11 undergraduate students and guided 5
-undergraduates in independent research. • Created a welcoming atmosphere
-where undergraduates became prepared to succeed in research. • Eight of
-eleven past mentees are now pursuing graduate studies or professional
-degrees.
-
-Undergraduate Independent Study Mentor • Assisted with designing an
-undergraduate independent study focusing on Green salamander (Aneides
-aeneus) conservation status. • Demonstrated techniques used to create
-geographic maps of species presence and the distribution of threatened
-species.
-
-High School STEM Independent Study Mentor • Helped high school students
-complete an independent study involving amphibian population monitoring
-using an artificial cover board array.
-
-## **PUBLICATIONS**
-
-**Peer Reviewed Publications**
-
-1. Tompros A., Wilber M.Q., Fenton
-A., Carter E.D., & Gray M.J., (2022) Efficacy of Plant-derived
-Fungicides at Inhibiting Batrachochytrium salamandrivorans Growth.
-Journal of Fungi.  
-2. Olson D.H., Gray, M.J., Pasmans, F., Grayfer, L., Wilber M.Q., Carter,
-E.D., Cunningham A.A., (2022) The Rising Tide of Herpetological Disease
-Science and Management. Herpetological Review. In Press  
-3. Towe, A. E.,
-Gray, M. J., Carter, E. D., Wilber, M. Q., Ossiboff, R. J., Ash, K.,
-Bohanon, M., Bajo, B. A., & Miller, D. L. (2021). Batrachochytrium
-salamandrivorans Can Devour More than Salamanders. Journal of Wildlife
-Diseases. DOI: 10.7589/JWD-D-20-00214.  
-4. Goodman, R. M., Carter, E. D., &
-Miller, D. L. (2021). Influence of Herbicide Exposure and Ranavirus
-Infection on Growth and Survival of Juvenile Red-Eared Slider Turtles
-(Trachemys scripta elegans). Viruses. DOI: 10.3390/v13081440.  
-5. Wilber, M.
-Q., Carter, E. D., Gray, M. J., & Briggs, C. J. (2021). Putative
-resistance and tolerance mechanisms have little impact on disease
-progression for an emerging salamander pathogen. Functional Ecology.
-DOI: 10.1111/1365-2435.13754.  
-6. Cusaac, J. P. W., Carter, E. D., Woodhams,
-D. C., Robert, J., Spatz, J. A., Howard, J. L., Lillard, C., Graham, A.
-W., Hill, R. D., Reinsch, S., McGinnity, D., Reeves, B., Bemis, D.,
-Wilkes, R. P., Sutton, W. B., Waltzek, T. B., Hardman, R. H., Miller, D.
-L., & Gray, M. J. (2021). Emerging Pathogens and a Current-Use
-Pesticide: Potential Impacts on Eastern Hellbenders. Journal of Aquatic
-Animal Health. DOI: 10.1002/aah.10117  
-7. Carter, E. D., Bletz, M. C., Le
-Sage, M., LaBumbard, B., Rollins-Smith, L. A., Woodhams, D. C., Miller,
-D. L., & Gray, M. J. (2021). Winter is coming--Temperature affects
-immune defenses and susceptibility to Batrachochytrium salamandrivorans.
-Plos Pathogens. DOI: 10.1371/journal.ppat.1009234.  
-8. Tompros, A., Dean, A.
-D., Fenton, A., Wilber, M. Q., Carter, E. D., & Gray, M. J. (2021).
-Frequency-dependent transmission of Batrachochytrium salamandrivorans in
-eastern newts. Transboundary and Emerging Diseases. DOI:
-10.1111/tbed.14043.  
-9. Robinson, K. A., Pereira, K. E., Bletz, M. C.,
-Carter, E. D., Gray, M. J., Piovia-Scott, J., Romansic, J. M., Woodhams,
-D. C., & Fritz-Laylin, L. (2020). Isolation and maintenance of
-Batrachochytrium salamandrivorans cultures. Diseases of Aquatic
-Organisms. DOI: 10.3354/dao03488.  
-10. Malagon, D. A., Melara, L. A.,
-Prosper, O. F., Lenhart, S., Carter, E. D., Fordyce, J. A., Peterson, A.
-C., Miller, D. L., & Gray, M. J. (2020). Host density and habitat
-structure influence host contact rates and Batrachochytrium
-salamandrivorans transmission. Scientific Reports. DOI:
-10.1038/s41598-020-62351-x.  
-11. Kumar, R., Malagon, D. A., Carter, E. D.,
-Miller, D. L., Bohanon, M. L., Cusaac, J. P. W., Peterson, A. C., &
-Gray, M. J. (2020). Experimental methodologies can affect pathogenicity
-of Batrachochytrium salamandrivorans infections. Plos One. DOI:
-10.1371/journal.pone.0235370  
-12. Carter, E. D., Miller, D. L., Peterson, A.
-C., Sutton, W. B., Cusaac, J. P. W., Spatz, J. A., Rollins-Smith, L.,
-Reinert, L., Bohanon, M., Williams, L. A., Upchurch, A., & Gray, M. J.
-(2019). Conservation risk of Batrachochytrium salamandrivorans to
-endemic lungless salamanders. Conservation Letters. DOI:
-10.1111/conl.12675.  
-13. Ossiboff, R. J., Towe, A. E., Brown, M. A., Longo,
-A. V., Lips, K. R., Miller, D. L., Carter, E. D., Gray, M. J., & Frasca,
-S. (2019). Differentiating Batrachochytrium dendrobatidis and B.
-salamandrivorans in Amphibian Chytridiomycosis Using RNAScope®in situ
-Hybridization. Frontiers in Veterinary Science. DOI:
-10.3389/fvets.2019.00304.  
-14. Peace, A., O'Regan, S. M., Spatz, J. A.,
-Reilly, P. N., Hill, R. D., Carter, E. D., Wilkes, R. P., Waltzek, T.
-B., Miller, D. L., & Gray, M. J. (2019). A highly invasive chimeric
-ranavirus can decimate tadpole populations rapidly through multiple
-transmission pathways. Ecological Modelling. DOI:
-10.1016/j.ecolmodel.2019.108777Get.  
-15. Casais, R., Larrinaga, A. R.,
-Dalton, K. P., Domínguez Lapido, P., Márquez, I., Bécares, E., Carter,
-E. D., Gray, M. J., Miller, D. L., & Balseiro, A. (2019). Water sports
-could contribute to the translocation of ranaviruses. Scientific
-Reports. DOI: 10.1038/s41598-019-39674-5.  
-16. Goodman, R. M., Hargadon, K.
-M., & Carter, E.D. (2018). Detection of Ranavirus in Eastern Fence
-Lizards and Eastern Box Turtles in Central Virginia. Northeastern
-Naturalist, 25, 391 - 398. DOI: 10.1656/045.025.0306.  
-17. Gray, M. J.,
-Spatz, J. A., Carter, E. D., Yarber, C. M., Wilkes, R. P., & Miller, D.
-L. (2018). Poor biosecurity could lead to disease outbreaks in animal
-populations. Plos One. DOI: 10.1371/journal.pone.0193243.  
-18. Goodman, R.
-M., & Carter, E. D. (2017). Survey of Herpetofauna on the Campus of
-Hampden-Sydney College in Prince Edward County, Virginia. Journal of the
-Virginia Herpetological Society.  
-19. Carter, E. D., & Goodman, R. M. (2013).
-County Record: Storeria dekayi (Northern Brown Snake) Prince Edward
-County Va [County Record]. Catesbeiana. Journal Publications in review
-
-### **In Review**
-Gray, J. M., Carter, E. D., Cusaac, J. P. W., Peterson, A. C.,
-Whetstone, D. R., Hertz, A., Muniz-Torres, Y. A., Bletz Molly, C.,
-Woodhams, D. C., Piovia-Scott, J., Romansic, J. M., Olea, P. G.,
-Hardman, R. H., Sutton, W. B., McCusker, D. C., & Miller, L. D. (2022).
-Broad host susceptibility of North American amphibian species to
-Batrachochytrium salamandrivorans suggests high invasion potential and
-extinction risk. Nature Communications. 
-SELECT PRESENTATIONS AND INVITED LECTURES
-
-Carter, E.D, Wilber, M.Q., Miller, D.M., Sheley, W.S., DeMarchi J., Gray
-M.J. From the early stages of infection to the grave: How does
-Batrachochytrium salamandrivorans transmission probability shifts
-through infection? First Global Amphibian and Reptile Disease
-Conference. Knoxville, TN. 2022 Carter, E.D, Fungal Pathogens. WFS 401:
-Ecology and Management of Wildlife Health. Knoxville, TN. 2022 (Invited)
-Carter, E.D, M. J. Gray, D. L. Miller, Necronotic: Infected carcasses
-can contribute to Batrachochytrium salamandrivorans outbreaks. Annual
-Arizona State Amphibian Disease Conference. Virtual. 2021 Carter, E.D,
-Sheley, W. A Skin-Eating Fungus Threatens Salamander Species. University
-of Tennessee Wildlife Disease Association. Knoxville, TN. 2021 (Invited)
-Carter, E.D, Sheley, W. A Skin-Eating Fungus Threatens Salamander
-Species. University of Tennessee Science Forum. Knoxville, TN. 2021
-(Invited) Carter, E.D. D. L. Miller, B. A. Bajo, A. C. Peterson, M.
-Bohanon, K. Ash, and M. J. Gray. Winter is coming: Temperature dependent
-virulence of Batrachochytrium salamandrivorans. 9th World Congress of
-Herpetology, Otago, Dunedin, New Zealand. 2020 Carter, E. D., D. L.
-Miller, B. A. Bajo, A. C. Peterson, M. Bohanon, K. Ash, P.
-Watcharaanantapong, and M. J. Gray. 2019. Winter is coming: Temperature
-dependent virulence of Batrachochytrium salamandrivorans. Joint Meeting
-of the American Fisheries Society and The Wildlife Society, Reno, NV.
-2019 (Invited) Carter, E. D., D. L. Miller, B. A. Bajo, A. C. Peterson,
-M. Bohanon, K. Ash, and M. J. Gray. Winter is coming: Temperature
-dependent virulence of Batrachochytrium salamandrivorans. Ecological
-Society of America Annual Meeting, Louisville, Kentucky. 2019 Carter, E.
-D., D. L. Miller, B. A. Bajo, A. C. Peterson, M. Bohanon, K. Ash, P.
-Watcharaanantapong, and M. J. Gray. Winter is coming: Temperature
-dependent virulence of Batrachochytrium salamandrivorans. Zoological
-Society of London Symposium, London, England. 2019 (Poster) Carter, E.
-D., M. J. Gray, J. P. W. Cusaac, A. C. Peterson, L. Rollins-Smith, L.
-Reinert, M. Bohanon, B. A. Bajo, D. Malagon, R. Kumar, B. Augustino, L.
-Williams, A. Upchurch, P. Nanjappa, R. N. Harris, and D. L. Miller.
-2019. Broad host range of Batrachochytrium salamandrivorans equates to
-high invasion probability in North America. Zoological Society of London
-Symposium, London, England. 2019 (Poster) Carter, E. D., D. L. Miller,
-M. Bohanon, B. A. Bajo, D. A. Malagon, R. Kumar, B. J. Augustino, P.
-Watcharaanantapong, and M. J. Gray. A cool-loving fungus- temperature
-drives virulence of Batrachochytrium salamandrivorans (Bsal.). The
-Wildlife Society Annual Meeting, Gatlinburg, TN. 2019 Carter, E. D., M.
-J. Gray, D. L. Miller, M. Bohanon, B. Bajo, and P. W. Cussaac.
-Temperature influences infectivity of Batrachochytrium salamandrivorans
-(Bsal). Annual Meeting of the Southeast Partners in Amphibian and
-Reptile Conservation, Black Mountain, NC. 2019 Carter, E. D., J. P.
-Cusaac, D. L. Miller, J. A. Spatz, L. Rollins-Smith, L. K. Reinert, L.
-A. Williams, A. Upchurch, M. Bohanon, and M. J. Gray. Susceptibility of
-species in the subfamily Spelerpinae to Batrachochytrium
-salamandrivorans. International Conference of the Wildlife Disease
-Association, St. Augustine, FL. 2018 Carter, E. D., J. P. Cusaac, D. L.
-Miller, L. Rollins-Smith, L. Reinert, M. Bohanon, D. A. Malagon, C. N.
-Sheets, L. Williams, A. Upchurch, P. Nanjappa, and M. J. Gray.
-Evaluating the threat of Batrachochytrium salamandrivorans (Bsal) to
-North American amphibian species including unknown anuran hosts.
-International Conference of the Wildlife Disease Association, St.
-Augustine, FL. 2018 (Poster) Carter, E. D., M. J. Gray, J. A. Spatz, and
-D. L. Miller. Interaction of hydroperiod and ranavirus leading to
-possible amphibian population declines in Great Smoky Mountains National
-Park. Annual Meeting of the Southeast Partners in Amphibian and Reptile
-Conservation, Helen, GA. 2018 Carter, E. D., M. J. Gray, J. A. Spatz,
-and D. L. Miller. Conservation risk of Batrachochytrium salamandrivorans
-to endemic brook salamanders. Annual Meeting of the Northeast Partners
-in Amphibian and Reptile Conservation, Pembroke, VA. 2017 (Poster)
-Carter, E. D., M. J. Gray, J. A. Spatz, and D. L. Miller. Interaction of
-Hydroperiod and Ranavirus Leading to Possible Amphibian Population
-Declines in The Great Smoky Mountains National Park. Fourth
-International Symposium on Ranaviruses, Budapest, Hungary. 2017 (Poster)
-Carter, E. D., M. J. Gray, J. A. Spatz, and D. L. Miller. Poor
-biosecurity could lead to ranavirus outbreaks in amphibian populations.
-Annual Meeting of the Southeast Partners in Amphibian and Reptile
-Conservation, Little Rock, AR. (Poster) Carter, E. D., M. J. Gray, J. A.
-Spatz, and D. L. Miller. Population Dynamics and Pathogen Prevalence in
-an Amphibian Breeding Pond in Cades Cove. Great Smoky Mountains National
-Park Research Colloquium, Gatlinburg, TN. 2017 Carter, E. D., M. J.
-Gray, J. A. Spatz, P. E. Super, and D. L. Miller. Interaction of
-hydroperiod and ranavirus leading to possible amphibian population
-declines in the Great Smoky Mountains National Park. 71st Annual
-Conference of the Southeastern Association of Fish and Wildlife
-Agencies, Louisville, KY. 2017
-
-PROFESSIONAL TRAINING
-
-Teaching Course: Center for the Integration of Research, Teaching, and
-Learning (CIRTL)- FEUL Professional Development Seminar University of
-Tennessee Teaching and Learning Innovation Center (Synchronous
-Instruction Online) Description: A six-week course focused on
-facilitating undergraduate evidence-based learning (FUEL).
-
-Teaching Course: Introduction to Online Teaching for Graduate Students
-University of Tennessee Teaching and Learning Innovation Center
-(Synchronous Instruction Online) Description: A four-week course which
-focused on improving online teaching methods.
-
-Teaching Module: Course-Based Assessments University of Tennessee
-Teaching and Learning Innovation Center (Online) Description: An online
-teaching module that discussed best practices in forming course
-objectives and developing methods of assessment.
-
-Teaching Module: Inclusive Teaching Methods University of Tennessee
-Teaching and Learning Innovation Center (Online) Description: An online
-teaching module that demonstrated methods of inclusive teaching that
-provide opportunities for all students to succeed.
-
-Student Workshop: Conservation Medicine One Health and Wildlife Diseases
-University of Georgia, Athens, GA, November 2018 Description: A workshop
-focused on the One Health concept and how it relates to wildlife disease
-management.
-
-Student Workshop: Scientific Computing for Biology University of
-Tennessee, Knoxville, TN, Description: A workshop which taught data and
-code repository management. Overviewed powerful and commonly used
-predictive modeling techniques.
-
-PROFESSIONAL AFFILIATIONS
-
-Wildlife Disease Association Partners in Amphibian and Reptile
-Conservation Ecological Society of America The Wildlife Society Gamma
-Sigma Delta Sigma Xi
-
-PROFESSIONAL SERVICE
-
-Young Williams Animal Hospital • Animal Foster 2022
-
-Global Amphibian and Reptile Disease Conference 2021-2022 • Student
-Committee Chair • Student Oral and Poster Presentation Competition
-Organizer • Student Field Trip Organizer • Welcome and Registration Desk
-Volunteer
-
-UTK Graduate Student Senate Departmental Representative 2021-2022 •
-Executive Committee Member: Treasurer • Annual Fundraising Chair •
-Organized a Graduate Student Senate 5K which raised \$2000 for a local
-food pantry serving faculty, staff, graduate and undergraduate students
-at UT • Organized a Halloween Costume Contest which benefited the Big
-Orange Pantry
-
-UTK Graduate Student Senate Departmental Representative 2018-2019 •
-Judiciary Committee Member: Justice Peer-Reviewed Articles for: • PeerJ
-• EcoHealth • Journal of Wildlife Diseases
-
-Tennessee Amphibian Monitoring Program 2016-2020 • Route Leader, Blount
-County, TN
-
-Amphibian Sampling Technique Demonstrations • Led amphibian sampling
-technique training for three elementary school classes • Provided a
-larval amphibian sampling technique training to an undergraduate student
-organization focused on promoting women in STEM
-
-LANGUAGES
-
-English: Native Language
-
-German: Intermediate Listener, Intermediate Speaker, Intermediate
-Reading and Writing
-
-COMPUTER SKILLS
-
-Programming: R
-
-Applications: ArcGIS, ImageJ, Photoshop, JM
-
-REFERENCES
-
-Dr. Matthew J. Gray, Professor Department of Forestry, Wildlife and
-Fisheries University of Tennessee, Institute of Agriculture Phone: (865)
-385-0772 Email: [mgray11\@utk.edu](mailto:mgray11@utk.edu){.email}
-
-Dr. Debra L. Miller, Professor Department of Forestry, Wildlife and
-Fisheries & Department of Biomedical and Diagnostic Sciences (College of
-Veterinary Medicine) University of Tennessee, Institute of Agriculture
-Phone: (865) 806-7598 Email:
-[dmille42\@utk.edu](mailto:dmille42@utk.edu){.email}
-
-Dr. Mark Q Wilber, Assistant Professor Department of Forestry, Wildlife
-and Fisheries University of Tennessee, Institute of Agriculture Phone:
-(865) 974-7126 Email:
-[mqwilber\@gmail.com](mailto:mqwilber@gmail.com){.email}
+**Dr. Mark Q. Wilber** — Assistant Professor, UT Institute of Agriculture  
+Phone: (505) 321‑5381 · Email: [mwilber@utk.edu](mailto:mwilber@utk.edu)

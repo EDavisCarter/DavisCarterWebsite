@@ -1,28 +1,43 @@
-
 ---
-title: "Contact me"
-output: 
- html_document:
+title: ""
+output:
+  html_document:
     includes:
-       in_header: GoogleAnalytics.Rhtml
+      in_header: GoogleAnalytics.Rhtml
+    theme: yeti
+    css: style.css
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-***
-
-# Phone
-
-704-819-0708
+# 📬 Let's Connect
+I always enjoy hearing from colleagues, collaborators, and curious minds.  
+Whether you'd like to discuss research, teaching, or a new project idea — feel free to get in touch!  
 
 ***
 
-#  Email
+### 📞 Phone  
+**704‑819‑0708**  
 
-**Work Email:** ecarte27@utk.edu
+***
 
-**Gmail Email:** carteredward4@gmail.com
+### 📧 Email  
+**Work:** [cartere2@queens.edu](mailto:cartere2@queens.edu)  
+**UTK:** [ecarte27@utk.edu](mailto:ecarte27@utk.edu)  
+**Personal:** [carteredward4@gmail.com](mailto:carteredward4@gmail.com)  
+
+***  
+
+### 🌐 Find Me Online
+
+<div style="text-align: center; margin-top: 20px; font-size: 1.5em;">
+<a href="https://github.com/EDavisCarter" class="social-icon" target="_blank"><i class="fab fa-github"></i></a> &nbsp;
+<a href="https://www.linkedin.com/in/davis-carter-990496b2/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a> &nbsp;
+<a href="https://www.researchgate.net/profile/Edward_Carter8" class="social-icon" target="_blank"><i class="fab fa-researchgate"></i></a> &nbsp;
+<a href="https://scholar.google.com/citations?user=lZCsSrAAAAAJ&hl=en" class="social-icon" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+</div>
+
+***
+<div style="text-align: center; font-style: italic; margin-top: 20px;">
+🐦 Carrier pigeon available by request only.
+</div>
 
 
-Carrier Pigeon
+

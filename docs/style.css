@@ -1,3 +1,20 @@
 blockquote {
   font-style: italic
 }
+/* === Hover effect for navbar and contact page icons === */
+a i:hover {
+  color: #0056b3; /* Change to your theme accent color */
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+a i {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Apply only to social icons (optional refinement) */
+.social-icon i:hover {
+  color: #0056b3;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}

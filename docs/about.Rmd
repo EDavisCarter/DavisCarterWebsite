@@ -9,20 +9,26 @@ output:
 ## <!-- blank line -->
 
 -   Name: **Davis Carter**\
--   Current Position: Post Doc University of Tennessee Amphibian Disease Lab\
+-   Current Position: Assistant Professor of Biology, Queens University of Charlotte\
 -   Research Interest: Amphibian Disease Ecology
 
-### **Education** \ **MS Wildlife and Fisheries Science, University of Tennessee, Knoxville 2018**\
-\* **BS Biology, Hampden-Sydney College 2015**
+### **Education** \ 
+**PhD Natural Resources, University of Tennessee, Knoxville 2022**\
+**MS Wildlife and Fisheries Science, University of Tennessee, Knoxville 2018**\
+**BS Biology, Hampden-Sydney College 2015**
 
 ![Hampden-Sydney College](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/H-SC.png) ![Forestry Wildlife and Fisheries](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/FWFlogo.png)
 
-\###**Early Life**
+### **Early Life**
 
-As a kid growing up in the Charlotte, NC, I experienced first hand how quickly development can impact wildlife. Woods and streams, which were once filled with wildlife, were bulldozed to build shopping centers and parking lots. Creeks I used to play in became so polluted I wouldn't let my dogs swim in them. I realized quickly that protecting our wildlife populations was something I was extremely interested in.
+Growing up in Charlotte, North Carolina, I observed firsthand the rapid pace at which development reshaped local landscapes. Woodlots and streams that once supported abundant wildlife were replaced by shopping centers and parking lots, and creeks I explored as a child gradually declined in ecological health. Witnessing those changes instilled in me a lasting commitment to conserving wildlife and protecting the habitats upon which they depend.
 
 ![**Charlotte**](https://raw.githubusercontent.com/EDavisCarter/DavisCarterWebsite/master/Charlotte.jpg)
 
-\##**Research Interests**
+## **Research Interests**
 
-As an undergraduate I was fortunate to work with Dr. Rachel M. Goodman at Hampden-Sydney College. She introduced me to the world of disease ecology, which is something I have beceome increasingly interested in and involved with. Our normally detramental ability to rapidly change the environment can be utilized as a tool to implement disease intervention strategies which limit the spread or impact of wildlife diseases. Before disease intervention strategies can be implemented, disease dynamics and epidemiology need to be fully understood.
+As an undergraduate, I was fortunate to work with Dr. Rachel M. Goodman at Hampden–Sydney College, who first opened my eyes to the field of disease ecology. What began as a research opportunity quickly became a defining intellectual turning point. I became captivated by the complex interplay between hosts, pathogens, and the environment, and especially by the realization that humans are not merely observers of these systems, but active participants shaping them.
+
+I began to see that the same environmental changes that often exacerbate disease emergence could, if thoughtfully applied, be harnessed as tools for intervention. This perspective reframed conservation challenges for me—not simply as problems to document, but as systems to understand deeply enough to influence. Yet I also came to appreciate that meaningful intervention cannot occur without first unraveling the underlying disease dynamics and epidemiology. Only by understanding how pathogens spread, persist, and interact with their hosts can we design strategies that are both effective and ecologically responsible.
+
+Building on this foundation, my research now centers on unraveling host–pathogen–environment interactions to inform management strategies aimed at reducing the burden of infectious disease in wildlife populations.  

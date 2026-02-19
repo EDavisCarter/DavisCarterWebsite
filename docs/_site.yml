@@ -9,15 +9,16 @@ navbar:
     - text: "About Me"
       href: about.html
       icon: fas fa-user
-    - text: "Pubs/Pres"
-      href: pubs.html
-      icon: fal fa-book-open
+    - text: "Photo Gallery"
+      href: photos.html
+      icon: fa fa-camera
     - text: "CV"
       href: CV.html
       icon: fas fa-paperclip
     - text: "Contact me"
       href: contact.html 
       icon: fas fa-phone
+
 
   right:
       - icon: fa-github fa-lg
@@ -26,6 +27,8 @@ navbar:
         href: https://www.linkedin.com/in/davis-carter-990496b2/
       - icon: fab fa-researchgate
         href: https://www.researchgate.net/profile/Edward_Carter8
+      - icon: fas fa-graduation-cap
+        href: https://scholar.google.com/citations?user=lZCsSrAAAAAJ&hl=en
 
 
 output:

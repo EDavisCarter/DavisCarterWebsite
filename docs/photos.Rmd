@@ -1,0 +1,37 @@
+---
+title: "Photo Gallery"
+output: html_document
+---
+```{css, echo=FALSE}
+.camera-roll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.camera-roll img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.camera-roll img:hover {
+  transform: scale(1.01);
+}
+```
+```{r, echo=FALSE, results='asis'}
+images <- list.files("research_images/gallery", 
+                     pattern = "\\.(jpg|jpeg|png|JPG|JPEG|PNG)$", 
+                     full.names = TRUE)
+
+cat('\n')
+for (img in images) {
+  cat(paste0('  <img src="', img, '" loading="lazy">\n'))
+}
+cat('\n')
+```
